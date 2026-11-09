@@ -1,0 +1,1174 @@
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Jul 28 2026 09:22:29 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="deepbook-v2-wip.webflow.io" data-wf-page="69eb2fdcb180744096c22621" data-wf-site="69e7b04d09112b265e2d47d1" lang="en"><head><meta charset="utf-8"/><title>Case Studies & Industry Solutions | Rodin Group LLC Custom Software</title><meta content="Explore 13+ production software systems, FinTech ledgers, AI platforms, and cloud architectures engineered by Rodin Group LLC." name="description"/><meta content="Case Studies & Industry Solutions | Rodin Group LLC Custom Software" property="og:title"/><meta content="Explore 13+ production software systems, FinTech ledgers, AI platforms, and cloud architectures engineered by Rodin Group LLC." property="og:description"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="assets/css/deepbook-v2-wip.webflow.shared.57c88baf1.css" rel="stylesheet" type="text/css"/><link href="assets/css/lenis.css" rel="stylesheet" type="text/css"/><link href="assets/css/rodin-custom.css" rel="stylesheet" type="text/css"/><link href="assets/img/rodin-favi.svg" rel="icon" type="image/svg+xml"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script></head><body><div class="global-styles"><div class="css-global_structure w-embed"><style>
+  :root {
+    --size-unit: 16;
+    --size-container-ideal: 1440;
+    --size-container-min: 992px;
+    --size-container-max: 1680px;
+    --size-container: clamp(var(--size-container-min), 100vw, var(--size-container-max));
+    --size-font: calc(var(--size-container) / (var(--size-container-ideal) / var(--size-unit)));
+  }
+
+  @media screen and (max-width: 991px) {
+    :root {
+      --size-container-ideal: 834;
+      --size-container-min: 768px;
+      --size-container-max: 991px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    :root {
+      --size-container-ideal: 550;
+      --size-container-min: 480px;
+      --size-container-max: 767px;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    :root {
+      --size-container-ideal: 375;
+      --size-container-min: 320px;
+      --size-container-max: 479px;
+    }
+  }
+
+  body {
+    font-size: var(--size-font);
+  }
+
+  body ::-webkit-scrollbar{display: none;}
+  body {-ms-overflow-style: none;}
+  html {scrollbar-width: none;} 
+
+  *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+  html {scroll-behavior: initial;}
+  html, body {-webkit-font-smoothing: antialiased;}
+  svg {max-width: none; height: auto; box-sizing: border-box; vertical-align: middle;}
+  
+  ::selection{
+    background-color: black;
+    color: white;
+    text-shadow: none;
+  }
+  
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  textarea{
+    resize: none;
+  }
+
+  [global="textStagger"] [global-target],
+[global="textStagger"]:not(:has([global-target])),
+[global="arrowReveal"] [global-target] {
+  font-kerning: none;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.25em;
+  position: relative;
+  text-shadow: 0 1.25em currentColor;
+  padding-bottom: 0.15em;
+  margin-bottom: -0.15em;
+}
+
+  [global="textStagger"] span, [global="textStagger"] {
+    margin-bottom: 0em;
+  }
+
+  @media only screen and (min-width: 1921px) {
+    .global_info-wrapper .global_info-grid {
+      width: 100%;
+      max-width: 1680px;
+    }
+
+    .global_info-wrapper {
+      display: flex;
+      padding: 13em 0em 7em 0em;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    .global_info-wrapper [dark-grey] {
+      background-color: #2E2E2E;
+      color: #fff;
+    }
+
+    .global_info-wrapper [dark-grey] .global_cube-top, .global_info-wrapper [dark-grey] .global_cube-bottom {
+      background-color: #fff;
+    }
+
+    .divider-comp.absolute-bottom.hide {
+      display: block;
+    }
+
+    #nav-container {
+      max-width: 68.5em;
+    }
+
+    #hero-home .h1-81px {
+      font-size: 6.5em;
+    }
+
+    #hero-home .ts-18px {
+      font-size: 1.5em;
+    }
+
+    #hero-home .cta-button {
+      font-size: 0.875em;
+    }
+
+    #home-builders h2 {
+      font-size: 4rem;
+    }
+
+    #home-builders .ts-18px {
+      font-size: 1.5rem;
+    }
+
+    .bh-hero_desc-wrapper, .th-hero_desc-wrapper {
+      inset: auto 4.5em 4.5em auto;
+    }
+
+    .bh-deepbook {
+      padding-top: 13em;
+      padding-bottom: 13em;
+    }
+  }
+
+  @media only screen and (max-width: 1920px) and (min-width: 1440px) {
+    #home-builders h2 {
+      font-size: 3rem;
+    }
+
+    #home-builders .ts-18px {
+      font-size: 1.125rem;
+    }
+  }
+
+  body.menu-open {
+    overflow: hidden;
+    touch-action: none;
+  }
+</style></div><div class="w-embed"><style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* scroll-behavior: smooth;  --- zakomentarisano jer baguje u webflow dashboardu, ne moze lepo da se skroluje i radi */ 
+  }
+
+  body {
+    text-box: trim-both cap alphabetic;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0 !important;
+    text-box-trim: trim-both;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  ::selection {
+    background-color: #1E6EF3;
+    color: #FFFFFF;
+  }
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  @supports not (text-box: trim-both cap alphabetic) {
+    h1, h2, h3, h4, h5, h6, p,
+    [class*="heading-style-"],
+    [class*="text-size-"] {
+      display: block;
+    }
+
+    h1::before, h2::before, h3::before, h4::before, h5::before, h6::before,
+    p::before,
+    [class*="heading-style-"]::before,
+    [class*="text-size-"]::before {
+      content: '';
+      display: table;
+      margin-bottom: -0.2075em;
+    }
+
+    h1::after, h2::after, h3::after, h4::after, h5::after, h6::after,
+    p::after,
+    [class*="heading-style-"]::after,
+    [class*="text-size-"]::after {
+      content: '';
+      display: table;
+      margin-top: -0.1075em;
+    }
+  }
+  
+</style></div><div class="css-animations w-embed"><style>
+:root {
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-deepbook: cubic-bezier(0.65, 0, 0.35, 1);
+}
+.cta-button_wide {
+  --w: 3em;
+  --offset: calc(var(--w) * -1 - 0.125em);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+.dt-button_wide {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.cta-button_wide-arrow-block,
+.cta-button_wide-content-block {
+  transition: transform 0.4s var(--ease), margin 0.4s var(--ease);
+  will-change: transform, margin;
+}
+.cta-button_wide > .cta-button_wide-arrow-block:first-of-type {
+  width: var(--w);
+  margin-left: var(--offset);
+}
+.cta-button_wide > .cta-button_wide-arrow-block:last-of-type {
+  width: var(--w);
+}
+.cta-button_wide:hover > .cta-button_wide-arrow-block:first-of-type {
+  margin-left: 0;
+}
+.cta-button_wide:hover > .cta-button_wide-arrow-block:last-of-type {
+  margin-right: var(--offset);
+}
+.dt-button_wide-arrow-block {
+  width: 1.5em;
+  height: 1.5em;
+  flex: 0 0 auto;
+  overflow: visible;
+}
+.dt-button_wide-arrow-block path {
+  transform-origin: center center;
+  transform-box: fill-box;
+  transition: transform 0.4s var(--ease-deepbook);
+  will-change: transform;
+}
+.dt-button_wide-arrow-block path:first-of-type {
+  transform: translate(0, 0) scale(0.4);
+}
+.dt-button_wide-arrow-block path:last-of-type {
+  transform: translate(-1em, 0) scale(0.4);
+}
+.dt-button_wide:hover .dt-button_wide-arrow-block path:first-of-type {
+  transform: translate(1em, 1em) rotate(90deg) scale(0.4);
+}
+.dt-button_wide:hover .dt-button_wide-arrow-block path:last-of-type {
+  transform: translate(0, 0) scale(0.4);
+}
+.th-platforms_button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.th-platforms_button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1E6EF3;
+  border-radius: inherit;
+  transform: scale(0);
+  transform-origin: center center;
+  transition: transform 0.4s var(--ease-deepbook);
+  pointer-events: none;
+  z-index: -1;
+}
+.th-platforms_arrows-block .th-platforms_button.active:hover .th-platforms_button-bg,
+.th-platforms_filters-block .th-platforms_button:hover .th-platforms_button-bg,
+.th-platforms_filters-block .th-platforms_button.active .th-platforms_button-bg {
+  transform: scale(1);
+}
+.footer_list-item {
+  position: relative;
+}
+
+.footer_list-item::before {
+  content: '';
+  position: absolute;
+  right: calc(100% + 0.75em);
+  top: 50%;
+  width: 0.6em;
+  height: 0.6em;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 0.3s var(--ease-deepbook);
+  pointer-events: none;
+}
+
+.footer_list-item:hover::before {
+  opacity: 1;
+}
+.global-dd_toggle {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .global-dd_grid:not([no-hover]) .global-dd_toggle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #1E6EF3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s var(--ease-deepbook);
+    z-index: -1;
+  }
+  .global-dd_grid:not([no-hover]) .global-dd_wrapper:hover .global-dd_toggle::before {
+    transform: scaleX(1);
+  }
+}
+
+[data-reveal] > div {
+  text-box: normal !important;
+  text-box-trim: none !important;
+}
+
+[data-reveal] {
+  text-box: normal !important;
+  text-box-trim: none !important;
+}
+
+.global-projects_grid-item {
+  --plava: #1E6EF3;
+}
+
+.global-projects_arrow-block,
+.global-projects_logo-wrapper,
+.global-projects_img-block {
+  transition: background-color 0.4s var(--ease-deepbook);
+}
+.global-projects_grid-item:hover .global-projects_arrow-block,
+.global-projects_grid-item:hover .global-projects_logo-wrapper,
+.global-projects_grid-item:hover .global-projects_img-block {
+  background-color: var(--plava);
+}
+
+.global-projects_arrow-block svg {
+  overflow: visible;
+}
+.global-projects_arrow-block path {
+  transform-origin: center center;
+  transform-box: fill-box;
+  transition: transform 0.4s var(--ease-deepbook);
+  will-change: transform;
+}
+.global-projects_arrow-block path:first-of-type {
+  transform: translate(0, 0);
+}
+.global-projects_arrow-block path:last-of-type {
+  transform: translate(-2.5em, 0);
+}
+.global-projects_grid-item:hover .global-projects_arrow-block path:first-of-type {
+  transform: translate(2.5em, .5em) rotate(90deg);
+}
+.global-projects_grid-item:hover .global-projects_arrow-block path:last-of-type {
+  transform: translate(0, 0);
+}
+
+.global-projects_logo-wrapper > div {
+  transition: transform 0.4s var(--ease-deepbook);
+  will-change: transform;
+}
+.global-projects_grid-item:hover .global-projects_logo-wrapper > div {
+  transform: scale(1.2);
+}
+
+.global-projects_img-block svg[dots] {
+  transition: transform 0.4s var(--ease-deepbook), opacity 0.4s var(--ease-deepbook);
+  will-change: transform, opacity;
+}
+.global-projects_grid-item:hover .global-projects_img-block svg[dots] {
+  transform: scale(0.5);
+  opacity: 0;
+}
+</style></div></div><div class="page-wrapper"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div nav-banner="" class="navbar-pencil"><div data-wrapper-banner="" class="w-layout-hflex navbar-pencil_block"><div data-banner="" class="w-layout-hflex hy-center"><div class="cube-6"></div><a data-nav-link="" href="#contact-section" commandfor="project-modal" command="show-modal" class="ts-12px letter-spacing_05 navbar-pencil_link">Q4/Q1 Enterprise Software &amp; AI Architecture Mandates Open — Book a Technical Discovery →</a></div></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 12" fill="none" class="icon-x"><path d="M9 3L3 9M3 3L9 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="padding-global navbar-padding"><div id="nav-container" class="w-layout-blockcontainer container-880 w-container"><div class="navbar-component"><div class="w-layout-hflex navbar_layout"><a href="index.html" aria-label="Rodin Group LLC Home" class="navbar-logo w-nav-brand"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 154.8 21" fill="none" class="nav-logo"><path d="M19.1523 0C23.5899 0 27.1875 3.59755 27.1875 8.03516H0V0H19.1523ZM0 9.96484H11.4V18H0V9.96484ZM13.6 9.96484H22.1L27.1875 18H18.6875L13.6 9.96484Z" fill="#1E6EF3"></path><path d="M36.19421052631579 1.5999999999999979H41.86105263157895Q43.555263157894736 1.5999999999999979 44.80157894736842 2.1549999999999976Q46.0478947368421 2.7099999999999973 46.729473684210525 3.7323684210526293Q47.41105263157895 4.754736842105261 47.41105263157895 6.1178947368421035Q47.41105263157895 7.597894736842104 46.6321052631579 8.659210526315789Q45.85315789473684 9.720526315789472 44.4121052631579 10.226842105263156L48.131578947368425 16.4H45.230000000000004L41.84157894736842 10.616315789473681H38.706315789473685V16.4H36.19421052631579ZM41.91947368421053 8.474210526315787Q43.28263157894737 8.474210526315787 44.05184210526316 7.851052631578945Q44.82105263157895 7.227894736842103 44.82105263157895 6.1178947368421035Q44.82105263157895 5.007894736842104 44.05184210526316 4.384736842105261Q43.28263157894737 3.7615789473684185 41.91947368421053 3.7615789473684185H38.706315789473685V8.474210526315787ZM50.07526315789474 8.999999999999998Q50.07526315789474 6.741052631578945 50.990526315789474 5.007894736842103Q51.90578947368421 3.274736842105261 53.54157894736842 2.320526315789471Q55.177368421052634 1.3663157894736813 57.3 1.3663157894736813Q59.42263157894737 1.3663157894736813 61.05842105263157 2.320526315789471Q62.694210526315786 3.274736842105261 63.60947368421052 5.007894736842103Q64.52473684210526 6.741052631578945 64.52473684210526 8.999999999999998Q64.52473684210526 11.258947368421051 63.60947368421052 12.992105263157892Q62.694210526315786 14.725263157894735 61.05842105263157 15.679473684210524Q59.42263157894737 16.633684210526315 57.3 16.633684210526315Q55.177368421052634 16.633684210526315 53.54157894736842 15.679473684210524Q51.90578947368421 14.725263157894735 50.990526315789474 12.992105263157892Q50.07526315789474 11.258947368421051 50.07526315789474 8.999999999999998ZM57.3 14.588947368421051Q58.66315789473684 14.588947368421051 59.71473684210527 13.887894736842103Q60.76631578947369 13.186842105263157 61.34078947368421 11.921052631578945Q61.915263157894735 10.655263157894735 61.915263157894735 8.999999999999998Q61.915263157894735 7.344736842105261 61.34078947368421 6.07894736842105Q60.76631578947369 4.81315789473684 59.71473684210527 4.1121052631578925Q58.66315789473684 3.4110526315789453 57.3 3.4110526315789453Q55.93684210526316 3.4110526315789453 54.88526315789474 4.1121052631578925Q53.833684210526314 4.81315789473684 53.25921052631579 6.07894736842105Q52.684736842105266 7.344736842105261 52.684736842105266 8.999999999999998Q52.684736842105266 10.655263157894735 53.25921052631579 11.921052631578945Q53.833684210526314 13.186842105263157 54.88526315789474 13.887894736842103Q55.93684210526316 14.588947368421051 57.3 14.588947368421051ZM67.69526315789473 1.5999999999999979H72.95315789473683Q75.19263157894737 1.5999999999999979 76.86736842105263 2.4373684210526294Q78.5421052631579 3.274736842105261 79.45736842105262 4.939736842105261Q80.37263157894736 6.604736842105261 80.37263157894736 8.999999999999998Q80.37263157894736 11.395263157894735 79.45736842105262 13.060263157894735Q78.5421052631579 14.725263157894735 76.86736842105263 15.562631578947368Q75.19263157894737 16.4 72.95315789473683 16.4H67.69526315789473ZM73.01157894736842 14.238421052631578Q74.51105263157895 14.238421052631578 75.5821052631579 13.634736842105262Q76.65315789473684 13.031052631578946 77.2178947368421 11.852894736842103Q77.78263157894736 10.674736842105261 77.78263157894736 8.999999999999998Q77.78263157894736 7.325263157894735 77.2178947368421 6.147105263157893Q76.65315789473684 4.96894736842105 75.5821052631579 4.365263157894734Q74.51105263157895 3.7615789473684185 73.01157894736842 3.7615789473684185H70.20736842105262V14.238421052631578ZM83.58210526315789 1.5999999999999979H86.09421052631578V16.4H83.58210526315789ZM90.08263157894736 1.5999999999999979H95.08736842105263L100.87105263157895 16.107894736842105V1.5999999999999979H103.38315789473684V16.4H98.37842105263157L92.59473684210525 1.8921052631578927V16.4H90.08263157894736Z" fill="white"></path><path d="M111.56881578947367 12.149999999999999Q111.56881578947367 10.785526315789472 112.01059210526316 9.795723684210525Q112.45236842105263 8.805921052631579 113.26322368421052 8.291447368421052Q114.0740789473684 7.776973684210525 115.17013157894736 7.776973684210525Q116.47868421052631 7.776973684210525 117.30631578947367 8.498355263157894Q118.13394736842105 9.219736842105263 118.46947368421051 10.539473684210524H117.17210526315789Q116.66881578947367 8.817105263157893 115.17013157894736 8.817105263157893Q114.45434210526315 8.817105263157893 113.94546052631577 9.208552631578947Q113.4365789473684 9.599999999999998 113.16256578947366 10.349342105263156Q112.88855263157893 11.098684210526315 112.88855263157893 12.149999999999999Q112.88855263157893 13.201315789473682 113.15697368421051 13.95065789473684Q113.4253947368421 14.7 113.93427631578946 15.09144736842105Q114.44315789473683 15.482894736842104 115.14776315789473 15.482894736842104Q115.79644736842104 15.482894736842104 116.28296052631578 15.17532894736842Q116.76947368421051 14.867763157894736 117.04348684210525 14.274999999999999Q117.3175 13.682236842105262 117.3286842105263 12.86578947368421H114.90171052631578V11.769736842105262H118.58131578947368V16.4H117.48526315789472V14.286184210526315Q117.33986842105261 14.867763157894736 117.02671052631578 15.371052631578946Q116.71355263157893 15.874342105263157 116.18789473684208 16.198684210526316Q115.66223684210524 16.523026315789473 114.93526315789472 16.523026315789473Q113.95105263157893 16.523026315789473 113.19052631578947 16.00296052631579Q112.42999999999999 15.482894736842104 111.99940789473683 14.493092105263155Q111.56881578947367 13.503289473684209 111.56881578947367 12.149999999999999ZM120.64710526315788 7.899999999999999H123.65565789473683Q124.58394736842104 7.899999999999999 125.27736842105261 8.213157894736842Q125.9707894736842 8.526315789473683 126.34546052631578 9.102302631578947Q126.72013157894736 9.67828947368421 126.72013157894736 10.45Q126.72013157894736 11.32236842105263 126.2503947368421 11.937499999999998Q125.78065789473683 12.552631578947366 124.91947368421052 12.80986842105263L126.80960526315789 16.4H125.34447368421051L123.59973684210526 12.988815789473684H121.91092105263156V16.4H120.64710526315788ZM123.66684210526314 11.892763157894734Q124.4832894736842 11.892763157894734 124.9474342105263 11.518092105263156Q125.41157894736841 11.143421052631577 125.41157894736841 10.45Q125.41157894736841 9.75657894736842 124.9474342105263 9.376315789473683Q124.4832894736842 8.996052631578946 123.66684210526314 8.996052631578946H121.91092105263156V11.892763157894734ZM128.15960526315789 12.149999999999999Q128.15960526315789 10.785526315789472 128.5957894736842 9.795723684210525Q129.03197368421053 8.805921052631579 129.84282894736842 8.291447368421052Q130.6536842105263 7.776973684210525 131.74973684210525 7.776973684210525Q132.8457894736842 7.776973684210525 133.6566447368421 8.291447368421052Q134.4675 8.805921052631579 134.9036842105263 9.795723684210525Q135.3398684210526 10.785526315789472 135.3398684210526 12.149999999999999Q135.3398684210526 13.514473684210525 134.9036842105263 14.504276315789472Q134.4675 15.49407894736842 133.6566447368421 16.008552631578947Q132.8457894736842 16.523026315789473 131.74973684210525 16.523026315789473Q130.6536842105263 16.523026315789473 129.84282894736842 16.008552631578947Q129.03197368421053 15.49407894736842 128.5957894736842 14.504276315789472Q128.15960526315789 13.514473684210525 128.15960526315789 12.149999999999999ZM131.74973684210525 15.482894736842104Q132.46552631578948 15.482894736842104 132.97440789473683 15.09144736842105Q133.4832894736842 14.7 133.75730263157894 13.95065789473684Q134.03131578947367 13.201315789473682 134.03131578947367 12.149999999999999Q134.03131578947367 11.098684210526315 133.75730263157894 10.349342105263156Q133.4832894736842 9.599999999999998 132.97440789473683 9.208552631578947Q132.46552631578948 8.817105263157893 131.74973684210525 8.817105263157893Q131.03394736842105 8.817105263157893 130.52506578947367 9.208552631578947Q130.01618421052632 9.599999999999998 129.7421710526316 10.349342105263156Q129.46815789473683 11.098684210526315 129.46815789473683 12.149999999999999Q129.46815789473683 13.201315789473682 129.7421710526316 13.95065789473684Q130.01618421052632 14.7 130.52506578947367 15.09144736842105Q131.03394736842105 15.482894736842104 131.74973684210525 15.482894736842104ZM137.01421052631576 13.100657894736841V13.078289473684208V7.899999999999999H138.27802631578945V13.167763157894736V13.190131578947367Q138.27802631578945 14.37565789473684 138.7365789473684 14.929276315789473Q139.19513157894735 15.482894736842104 140.0786842105263 15.482894736842104Q140.96223684210526 15.482894736842104 141.42078947368418 14.923684210526314Q141.87934210526313 14.364473684210525 141.87934210526313 13.167763157894736V7.899999999999999H143.14315789473682V13.078289473684208Q143.14315789473682 14.789473684210524 142.39940789473684 15.656249999999998Q141.65565789473683 16.523026315789473 140.0786842105263 16.523026315789473Q138.50171052631578 16.523026315789473 137.75796052631577 15.661842105263156Q137.01421052631576 14.80065789473684 137.01421052631576 13.100657894736841ZM145.6898684210526 7.899999999999999H148.65368421052628Q149.66026315789472 7.899999999999999 150.38723684210524 8.213157894736842Q151.11421052631576 8.526315789473683 151.4944736842105 9.130263157894735Q151.87473684210522 9.734210526315788 151.87473684210522 10.584210526315788Q151.87473684210522 11.434210526315788 151.4944736842105 12.038157894736841Q151.11421052631576 12.642105263157893 150.38723684210524 12.955263157894734Q149.66026315789472 13.268421052631577 148.65368421052628 13.268421052631577H146.9648684210526V16.4H145.6898684210526ZM148.68723684210522 12.17236842105263Q149.5931578947368 12.17236842105263 150.07967105263154 11.76973684210526Q150.56618421052627 11.367105263157892 150.56618421052627 10.584210526315788Q150.56618421052627 9.801315789473684 150.07967105263154 9.404276315789472Q149.5931578947368 9.00723684210526 148.68723684210522 9.00723684210526H146.9648684210526V12.17236842105263Z" fill="#1E6EF3"></path></svg></a><nav role="navigation" class="navbar-menu w-nav-menu"><a href="capabilities.html" class="navbar_link-block w-inline-block"><span global="textStagger">Capabilities</span></a><a href="solutions.html" class="navbar_link-block w-inline-block w--current"><span global="textStagger">Case Studies</span></a><a href="company.html" class="navbar_link-block w-inline-block"><span global="textStagger">Company &amp; Process</span></a><a href="#contact-section" class="navbar_link-block w-inline-block"><span global="textStagger">Configure Build</span></a></nav><div class="navbar-cta_wrapper"><button type="button" commandfor="project-modal" command="show-modal" global="textStagger" class="nav_cta-button is--blue"><span global-target="">Start a Project</span></button><div id="hamb-button" class="hamburger-button"><div class="hamburger_line-1"></div><div class="hamburger_line-2"></div></div></div></div></div></div></div><div class="hamburger-component"><div class="w-layout-vflex hamburger-layout"><div class="w-layout-vflex hamburger-nav_wrapper"><a href="capabilities.html" class="hamburger_link-block w-inline-block"><span>Capabilities</span></a><div class="hamburger-divider"></div><a href="solutions.html" class="hamburger_link-block w-inline-block w--current"><span>Case Studies</span></a><div class="hamburger-divider"></div><a href="company.html" class="hamburger_link-block w-inline-block"><span>Company &amp; Process</span></a><div class="hamburger-divider"></div><a href="privacy-policy.html" class="hamburger_link-block w-inline-block"><span>Legal &amp; Governance</span></a><div class="hamburger-divider"></div></div><div class="w-layout-vflex gap-16 full-width"><button type="button" commandfor="project-modal" command="show-modal" class="cta-button is--blue mob_full-width no-margin"><span>Start a Project</span></button></div></div></div></div><main class="main-wrapper"><section class="th-hero"><div class="th-hero_img w-embed"><style>
+  [data-tick-section] {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    position: relative;
+  }
+  [data-tick-section] svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  [data-tick-section] .tick-fade-top,
+  [data-tick-section] .tick-fade-bottom,
+  [data-tick-section] .tick-fade-left,
+  [data-tick-section] .tick-fade-right {
+    position: absolute;
+    pointer-events: none;
+    z-index: 5;
+  }
+  [data-tick-section] .tick-fade-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 18.6%;
+    background: linear-gradient(to bottom, #000 0%, transparent 100%);
+  }
+  [data-tick-section] .tick-fade-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 19.2%;
+    background: linear-gradient(to top, #000 0%, transparent 100%);
+  }
+  [data-tick-section] .tick-fade-left {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 7%;
+    background: linear-gradient(to right, #000 0%, transparent 100%);
+  }
+  [data-tick-section] .tick-fade-right {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 7%;
+    background: linear-gradient(to left, #000 0%, transparent 100%);
+  }
+  [data-arc-group] {
+    transition: transform 0.3s;
+  }
+  @media (max-width: 767px) {
+    [data-arc-group="left"] { transform: translateX(512px); }
+    [data-arc-group="right"] { transform: translateX(-512px); }
+  }
+</style>
+<div data-tick-section>
+<svg width="100%" height="100%" viewBox="0 0 2560 1585" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_10063_669)">
+<mask id="mask0_10063_669" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="2560" height="1585">
+<path d="M2560 0H0V1585H2560V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_10063_669)">
+<path d="M2560 0H0V1585H2560V0Z" fill="black"/>
+<path d="M99.9971 89.333H109.332V91.999H99.9971V101.333H97.3311V91.999H87.999V89.333H97.3311V80H99.9971V89.333Z" fill="white"/>
+<path d="M2470.67 89.333H2480V91.999H2470.67V101.333H2468V91.999H2458.67V89.333H2468V80H2470.67V89.333Z" fill="white"/>
+<g filter="url(#filter0_f_10063_669)">
+<path d="M-48.8667 2164.36C177.46 2239.78 452.126 2027.3 564.617 1689.76C677.108 1352.23 584.827 1017.45 358.501 942.023C132.174 866.596 -142.492 1079.08 -254.983 1416.62C-367.474 1754.15 -275.193 2088.93 -48.8667 2164.36Z" fill="black"/>
+</g>
+<path data-rotate data-group="g2" data-side="right" d="M2483.72 1619.36V1566.06" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2537.74 1566.06V1512.75" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2533.61 519.391V466.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2478.84 468.029V414.723" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2417.93 417.684V364.378" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2353.31 369.042V315.736" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2281.53 322.447V269.141" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2206.7 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2126.77 222.184V168.878" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M2042.84 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M1953.47 132.127V78.8213" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M1857.28 78.8217V25.5156" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="right" d="M1757.67 34.4741V-18.832" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2533.49 417.684V364.378" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2468.86 369.042V315.736" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2397.09 322.447V269.141" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2322.25 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2242.32 222.184V168.878" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2158.39 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M2069.03 132.127V78.8213" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M1972.84 78.8217V25.5156" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="right" d="M1873.22 34.4741V-18.832" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2380.61 1619.36V1566.06" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2434.63 1566.06V1512.75" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2483.67 1518.43V1465.13" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2531.29 1465.14V1411.83" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2522.68 618.391V565.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2481.2 568.376V515.07" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2430.5 519.391V466.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2375.72 468.029V414.723" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2314.82 417.684V364.378" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2250.2 369.042V315.736" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2178.42 322.447V269.141" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2103.59 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M2023.65 222.184V168.878" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M1939.72 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M1850.36 132.127V78.8213" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M1754.17 78.8217V25.5156" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="right" d="M1654.56 34.4741V-18.832" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M2510.86 322.447V269.141" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M2436.03 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M2356.1 222.184V168.878" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M2272.17 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M2182.81 132.127V78.8213" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M2086.61 78.8217V25.5156" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="right" d="M1987 34.4741V-18.832" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2273.95 1619.36V1566.06" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2327.96 1566.06V1512.75" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2377 1518.43V1465.13" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2424.62 1465.14L2424.63 1411.83" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2463.72 1415.39V1362.08" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2498.54 1368.47V1315.17" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2528.39 1315.17V1261.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2553.99 1267.54V1214.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2548.36 816.029V762.723" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2524.53 764.667V711.361" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2494.95 717.376V664.07" stroke="#1E6EF3" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2459.22 667.029V613.723" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2416.01 618.391V565.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2374.53 568.376V515.07" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2323.83 519.391V466.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2269.05 468.029V414.723" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2208.15 417.684V364.378" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2143.53 369.042V315.736" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M2071.75 322.447V269.141" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M1996.92 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M1916.99 222.184V168.878" stroke="#1E6EF3" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M1833.05 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M1743.7 132.127V78.8213" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M1647.5 78.8217V25.5156" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="right" d="M1547.89 34.4741V-18.832" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2183.28 1619.36V1566.06" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2237.29 1566.06V1512.75" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2286.33 1518.43V1465.13" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2333.96 1465.14V1411.83" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2373.05 1415.39V1362.08" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2407.88 1368.47V1315.17" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2437.72 1315.17V1261.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2463.32 1267.54V1214.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2483.92 1214.24V1160.93" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2498.85 1167.32V1114.01" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2494.76 917.641V864.335" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2477.07 869.336V816.03" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2457.7 816.03V762.724" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2433.86 764.667V711.361" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2404.28 717.376V664.07" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2368.55 667.03V613.724" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2325.35 618.391V565.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2283.86 568.376V515.07" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2233.17 519.391V466.085" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2178.39 468.03V414.724" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2117.49 417.682V364.376" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2052.86 369.042V315.736" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1981.08 322.447V269.141" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1906.25 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1826.32 222.182V168.876" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1742.39 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1653.03 132.126V78.8203" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1556.83 78.8227V25.5166" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M1457.22 34.4751V-18.8311" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2508.8 1114.03V1060.72" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2508.8 968.03V914.723" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="right" d="M2513.22 1064.36V968.036" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="right" d="M2560.54 222.182V168.876" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="right" d="M2476.61 179.876V126.57" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="right" d="M2387.25 132.126V78.8203" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="right" d="M2291.05 78.8227V25.5166" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="right" d="M2191.45 34.4751V-18.8311" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="right" d="M2542.7 275.488V222.182" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="right" d="M2462.77 222.184V168.878" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="right" d="M2378.84 179.876V126.57" stroke="#1E6EF3" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="right" d="M2289.48 132.127V78.8213" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="right" d="M2193.28 78.8217V25.5156" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="right" d="M2093.67 34.4741V-18.832" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M241.059 -30.9375V22.3686" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M187.044 22.3691V75.6753" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M138.001 69.9941V123.3" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M90.376 123.285V176.591" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M51.2783 173.035V226.341" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M16.46 219.951V273.258" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M20.0576 871.049V924.355" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M55.7783 921.396V974.702" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M98.9873 970.035V1023.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M140.475 1020.05V1073.36" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M191.169 1069.04V1122.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M245.946 1120.4V1173.7" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M306.85 1170.74V1224.05" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M371.475 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M443.251 1265.98V1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M518.085 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M598.016 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M681.946 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M771.309 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M867.501 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g2" data-side="left" d="M967.112 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M125.497 -30.9375V22.3686" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M71.4834 22.3691V75.6753" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M22.4419 69.9941V123.3" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M24.9147 1020.05L24.9146 1073.36" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M75.6084 1069.04V1122.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M130.385 1120.4V1173.7" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M191.29 1170.74V1224.05" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M255.915 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M327.692 1265.98V1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M402.524 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M482.456 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M566.385 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M655.747 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M751.942 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g5" data-side="left" d="M851.553 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M344.169 -30.9375V22.3687" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M290.153 22.3691V75.6753" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M241.112 69.9941V123.301" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M193.487 123.285V176.591" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M154.391 173.035V226.342" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M119.571 219.951V273.258" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M89.7236 273.258V326.564" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M64.126 320.883V374.189" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M43.5283 374.188V427.493" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M28.5986 421.104V474.41" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M32.6826 670.785V724.091" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M50.376 719.09V772.396" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M69.751 772.396V825.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M93.585 823.758V877.064" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M123.169 871.049V924.355" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M158.891 921.396V974.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M202.1 970.035V1023.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M243.585 1020.05V1073.36" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M294.278 1069.04V1122.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M349.059 1120.4V1173.7" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M409.96 1170.74V1224.05" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M474.585 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M546.362 1265.98V1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M621.196 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M701.126 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M785.059 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M874.419 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M970.612 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M1070.22 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M18.6396 474.396V527.702" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M18.6396 620.396V673.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g3" data-side="left" d="M14.2236 524.062V620.39" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M11.7212 -30.9375V22.3686" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M16.6104 1120.4V1173.7" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M77.5127 1170.74V1224.05" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M142.137 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M213.917 1265.98L213.916 1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M288.749 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M368.68 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M452.61 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M541.971 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M638.167 1509.61L638.166 1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g4" data-side="left" d="M737.776 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M450.835 -30.9375V22.3687" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M396.821 22.3691V75.6753" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M347.778 69.9941V123.301" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M300.153 123.285V176.591" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M261.059 173.035V226.342" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M226.237 219.951V273.258" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M196.391 273.258V326.564" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M170.794 320.883V374.189" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M150.196 374.188V427.493" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M135.266 421.104V474.41" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M139.35 670.785V724.091" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M157.044 719.09V772.396" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M176.419 772.396V825.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M200.251 823.758V877.064" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M229.835 871.049V924.355" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M265.559 921.396V974.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M308.766 970.035V1023.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M350.251 1020.05V1073.36" stroke="#1E6EF3" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M400.946 1069.04V1122.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M455.725 1120.4V1173.7" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M516.626 1170.74V1224.05" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M581.251 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M653.028 1265.98V1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M727.862 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M807.794 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M891.725 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M981.085 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M1077.28 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M1176.89 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M125.309 474.396V527.702" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M125.309 620.396V673.703" stroke="#1E6EF3" stroke-width="6.67549"/>
+<path data-rotate data-group="g6" data-side="left" d="M120.891 524.062V620.39" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M541.501 -30.9375V22.3687" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M487.487 22.3691V75.6753" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M438.446 69.9941V123.301" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M390.821 123.285V176.591" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M351.725 173.035V226.341" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M316.903 219.951V273.258" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M287.059 273.258V326.564" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M261.46 320.883V374.189" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M240.862 374.188V427.493" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M225.934 421.104V474.41" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M230.016 670.785V724.091" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M247.71 719.09V772.396" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M267.085 772.396V825.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M290.919 823.758V877.064" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M320.501 871.049V924.355" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M356.225 921.396V974.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M399.434 970.035V1023.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M440.919 1020.05V1073.36" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M491.612 1069.04V1122.34" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M546.391 1120.4V1173.7" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M607.294 1170.74V1224.05" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M671.919 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M743.696 1265.98V1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M818.528 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M898.46 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M982.391 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M1071.75 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M1167.95 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M1267.56 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M215.975 474.396V527.702" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M215.975 620.396V673.703" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g1" data-side="left" d="M211.559 524.062V620.39" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M9.47364 1265.98L9.47363 1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M84.3076 1312.94V1366.24" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M164.237 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M248.169 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M337.528 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M433.725 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g7" data-side="left" d="M533.335 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M35.4727 1219.38V1272.69" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M107.25 1265.98V1319.29" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M182.083 1312.94V1366.24" stroke="#1E6EF3" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M262.014 1366.24V1419.55" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M345.945 1408.55V1461.86" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M435.303 1456.3V1509.61" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M531.496 1509.61V1562.91" stroke="#6A7681" stroke-width="6.67549"/>
+<path data-rotate data-group="g8" data-side="left" d="M631.111 1553.95V1607.26" stroke="#6A7681" stroke-width="6.67549"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_10063_669" x="-569.578" y="660.148" width="1448.79" height="1786.08" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="133.333" result="effect1_foregroundBlur_10063_669"/>
+</filter>
+<clipPath id="clip0_10063_669">
+<rect width="2560" height="1585" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+<div class="tick-fade-top"></div>
+<div class="tick-fade-bottom"></div>
+<div class="tick-fade-left"></div>
+<div class="tick-fade-right"></div>
+</div></div><div class="padding-global less-padding z-index-5"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-vflex th-hero_layout"><div class="mw-1024"><h1 class="h1-90px color-off-white text-center mob_40px hide-mob">Every industry. One engineering standard. Built by Rodin.</h1><h1 class="h1-90px color-off-white text-center mob_40px only-mob">Every industry. <br/>One standard. <br/>Built by Rodin.</h1></div></div></div></div><div class="th-hero_desc-wrapper"><p class="ts-15px">FinTech. Enterprise AI. Cloud Infrastructure. HealthTech. Every custom platform we engineer shares the same uncompromising architectural rigor, sub-50ms responsiveness, and 99.99% reliability.</p><div class="w-layout-hflex gap-8 full-width mob-vertical"><a global="textStagger" href="#trade" class="cta-button is--blue full-width"><span global-target="">Explore Case Studies</span></a><a global="textStagger" href="#contact-section" commandfor="project-modal" command="show-modal" class="cta-button full-width"><span global-target="">Book Discovery Call</span></a></div></div><div class="th-hero_mob-desc"><div class="padding-global"><div class="th-hero_desc-wrapper mobile"><p class="ts-15px">FinTech. Enterprise AI. Cloud Infrastructure. HealthTech. Every custom platform we engineer shares the same uncompromising architectural rigor, sub-50ms responsiveness, and 99.99% reliability.</p><div class="w-layout-hflex gap-8 full-width mob-vertical"><a global="textStagger" href="" target="_blank" class="cta-button is--blue hdn"><span global-target="">Explore Trading Apps</span></a><a global="textStagger" href="#contact-section" commandfor="project-modal" command="show-modal" class="cta-button"><span global-target="">Book Discovery Call</span></a></div></div></div></div></section><section class="th-trade"><div class="divider-comp absolute-top"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-vflex th-trade_layout"><div class="w-layout-grid th-trade_grid-1"><div><span class="ts-16px color-blue">What We Engineer</span></div><div class="w-layout-vflex gap-40"><h2 data-reveal="" class="h2-48px">Cloud Platforms. AI Systems. Distributed Cores. Engineered for your exact domain.</h2><div class="mw-550"><p class="ts-18px color-white-50">Off-the-shelf software forces your business into rigid templates. Rodin Group LLC engineers bespoke software systems tailored to your exact operational workflows and competitive moat.</p></div><div class="w-layout-hflex gap-8 mob_gap-4"><a global="textStagger" href="#contact-section" commandfor="project-modal" command="show-modal" class="cta-button is--blue"><span global-target="">Start a Project</span></a><a global="textStagger" href="#trade" class="cta-button"><span global-target="">Browse Portfolio</span></a></div></div></div></div></div></div><div class="w-layout-vflex th-trade_content-component"><div class="full-width"><div class="divider-comp hidemob"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-grid th-trade_grid"><div class="w-layout-vflex th-trade_grid-item"><div class="th-trade_ilust-wrapper first-item"><div class="th-trade_ilust" data-w-id="55810b5c-fd5c-44e5-c4fb-8fd83d3763e1" data-animation-type="lottie" data-src="assets/lottie/69f867f4b804359cb954281c_Deepbook_Web_-_Margin.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div></div><div class="w-layout-vflex th-trade_content-wrapper first-item"><h3 class="ts-18px">Cloud &amp; Web Platforms</h3><div class="mw-400"><p class="ts-15px color-white-50">Multi-tenant SaaS products, enterprise ERPs, and customer-facing web portals built with TypeScript, Next.js, Go, and globally distributed PostgreSQL.</p></div></div></div><div class="w-layout-vflex th-trade_grid-item"><div class="th-trade_ilust-wrapper second-item"><div class="th-trade_ilust" data-w-id="dfd18dd7-2452-8a64-35e2-6db9fbfbe851" data-animation-type="lottie" data-src="assets/lottie/69f867f420c796b67baf80cf_Deepbook_Web_-_Spot.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div></div><div class="w-layout-vflex th-trade_content-wrapper second-item"><h3 class="ts-18px">AI &amp; Data Automation</h3><div class="mw-400"><p class="ts-15px color-white-50">Private LLM agents, enterprise RAG search, and real-time ClickHouse/Flink data pipelines that turn proprietary data into autonomous decisions.</p></div></div></div><div class="w-layout-vflex th-trade_grid-item"><div class="th-trade_ilust-wrapper third-item"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 448 477" fill="none" class="th-trade_dots"><circle cx="33.1672" cy="32.8274" r="1.67699" fill="black"></circle><circle cx="128.521" cy="32.8274" r="1.67699" fill="black"></circle><circle cx="223.876" cy="32.8274" r="1.67699" fill="black"></circle><circle cx="319.23" cy="32.8274" r="1.67699" fill="black"></circle><circle cx="414.583" cy="32.8274" r="1.67699" fill="black"></circle><circle cx="33.1672" cy="115.181" r="1.67699" fill="black"></circle><circle cx="128.521" cy="115.181" r="1.67699" fill="black"></circle><circle cx="223.876" cy="115.181" r="1.67699" fill="black"></circle><circle cx="319.23" cy="115.181" r="1.67699" fill="black"></circle><circle cx="414.583" cy="115.181" r="1.67699" fill="black"></circle><circle cx="33.1672" cy="197.536" r="1.67699" fill="black"></circle><circle cx="128.521" cy="197.536" r="1.67699" fill="black"></circle><circle cx="223.876" cy="197.536" r="1.67699" fill="black"></circle><circle cx="319.23" cy="197.536" r="1.67699" fill="black"></circle><circle cx="414.583" cy="197.536" r="1.67699" fill="black"></circle><circle cx="33.1672" cy="279.89" r="1.67699" fill="black"></circle><circle cx="128.521" cy="279.89" r="1.67699" fill="black"></circle><circle cx="223.876" cy="279.89" r="1.67699" fill="black"></circle><circle cx="319.23" cy="279.89" r="1.67699" fill="black"></circle><circle cx="414.583" cy="279.89" r="1.67699" fill="black"></circle><circle cx="33.1672" cy="362.243" r="1.67699" fill="black"></circle><circle cx="128.521" cy="362.243" r="1.67699" fill="black"></circle><circle cx="223.876" cy="362.243" r="1.67699" fill="black"></circle><circle cx="319.23" cy="362.243" r="1.67699" fill="black"></circle><circle cx="414.583" cy="362.243" r="1.67699" fill="black"></circle><circle cx="33.1672" cy="444.597" r="1.67699" fill="black"></circle><circle cx="128.521" cy="444.597" r="1.67699" fill="black"></circle><circle cx="223.876" cy="444.597" r="1.67699" fill="black"></circle><circle cx="319.23" cy="444.597" r="1.67699" fill="black"></circle><circle cx="414.583" cy="444.597" r="1.67699" fill="black"></circle></svg><div class="th-trade_ilust-block"><div class="th-trade_ilust" data-w-id="d2632fee-5c29-b96f-46b6-2dc510ccf308" data-animation-type="lottie" data-src="assets/lottie/69f867f3f615d9ffa3a24289_Deepbook_Web_-_Predict.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div></div></div><div class="w-layout-vflex th-trade_content-wrapper last-item"><h3 class="ts-18px">Mission-Critical Core</h3><div class="mw-400"><p class="ts-15px color-white-50">High-frequency financial ledgers, eBPF security meshes, and native iOS/Android/Edge telemetry platforms engineered in Rust, Go, Swift, and Kotlin.</p></div></div></div></div></div></div></div><div class="full-width"><div class="divider-comp"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-vflex th-trade_info-layout"><div class="mw-660"><p class="ts-15px color-white-50">With traditional agencies, design, backend, and AI live in disconnected silos. At Rodin Group LLC, one integrated principal team architects, builds, and scales your entire software stack.</p></div></div></div></div><div class="divider-comp"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div></div></div></section><section class="th-sui"><div class="mw-760"><h2 class="h2-102px text-center blending_exclusion">Why leaders <span class="display_block">choose Rodin</span></h2></div><div class="th-sui_ilust-wrapper"><div class="object-contain w-embed"><svg width="276" height="1163" viewBox="0 0 276 1163" fill="none" xmlns="http://www.w3.org/2000/svg"><defs>
+<mask id="cyl-mask" maskUnits="userSpaceOnUse">
+<rect data-cyl-mask x="-50" y="83" width="380" height="1100" fill="white"/>
+</mask>
+</defs>
+
+<g mask="url(#cyl-mask)"><path d="M3.55 83 L3.55 1058.97 A135.14 74.77 0 0 0 273.84 1058.97 L273.84 83 A135 82 0 0 0 3.55 83 Z" fill="#161616"/><line x1="3.6" y1="83" x2="3.6" y2="1059" stroke="#747474" stroke-width="2.59" stroke-dasharray="8.95 8.95"/>
+<line x1="273.4" y1="83" x2="273.4" y2="1059" stroke="#747474" stroke-width="2.59" stroke-dasharray="8.95 8.95"/>
+<ellipse data-cyl-top cx="138.5" cy="83" rx="135" ry="82" stroke="#747474" stroke-width="2.59" stroke-dasharray="8.95 8.95" fill="#161616"/>
+<path d="M3.55 1058.97C3.55 1100.27 64.06 1133.74 138.7 1133.74C213.33 1133.74 273.84 1100.27 273.84 1058.97" stroke="#747474" stroke-width="2.59" stroke-dasharray="8.95 8.95"/></g>
+<path d="M273.839 1058.97C273.839 1017.67 213.333 984.195 138.697 984.195C64.0598 984.195 3.55469 1017.67 3.55469 1058.97" stroke="#747474" stroke-width="2.58775" stroke-dasharray="8.95 8.95"/>
+<path d="M138.694 788.849C176.196 788.849 210.082 797.181 234.548 810.587C259.058 824.018 273.84 842.365 273.84 862.326C273.84 882.288 259.058 900.634 234.548 914.065C210.082 927.471 176.196 935.804 138.694 935.804C101.194 935.804 67.3068 927.471 42.842 914.065C18.3317 900.634 3.55 882.288 3.55 862.326C3.55 842.365 18.3317 824.018 42.842 810.587C67.3068 797.181 101.194 788.849 138.694 788.849Z" data-gray fill="#747474" stroke="#161616" stroke-width="2.58775"/>
+<path d="M138.694 168.365C176.196 168.365 210.082 176.697 234.548 190.103C259.058 203.534 273.84 221.881 273.84 241.842C273.84 261.804 259.058 280.151 234.548 293.582C210.082 306.988 176.196 315.32 138.694 315.32C101.194 315.32 67.3068 306.987 42.842 293.582C18.3317 280.151 3.55 261.804 3.55 241.842C3.55 221.881 18.3317 203.534 42.842 190.103C67.3068 176.697 101.194 168.365 138.694 168.365Z" data-white fill="#F3F3F3" stroke="#161616" stroke-width="2.58775"/>
+<g data-blue-cap><path d="M44.3111 53.2349C56.5835 52.2635 71.0625 52.5593 87.1013 53.103C103.116 53.646 120.67 54.4351 138.997 54.4351C156.457 54.435 173.228 53.6862 188.636 53.1606C204.065 52.6343 218.113 52.3327 230.216 53.2143C242.334 54.0971 252.358 56.1585 259.808 60.2622C267.187 64.3266 272.091 70.4177 273.99 79.5679C274.006 79.6455 274.035 79.9009 274.063 80.4009C274.09 80.8706 274.112 81.4873 274.13 82.2348C274.165 83.7283 274.183 85.7125 274.186 88.0298C274.193 92.6631 274.146 98.6003 274.08 104.545C273.946 116.413 273.734 128.347 273.734 129.882C273.734 150.405 258.976 169.242 234.549 183.022C210.161 196.78 176.38 205.33 138.997 205.331C101.614 205.331 67.8347 196.78 43.4461 183.022C19.019 169.242 4.25976 150.405 4.25975 129.882C4.25963 129.312 4.00828 117.438 3.76823 105.611C3.648 99.6867 3.53037 93.7636 3.44776 89.2544C3.40645 86.9999 3.37403 85.1002 3.35437 83.731C3.34453 83.0459 3.33857 82.4955 3.33569 82.1011C3.33425 81.9038 3.33329 81.7486 3.33372 81.6362C3.33424 81.5032 3.33622 81.4743 3.33471 81.4946C4.06473 71.6629 8.2238 65.1697 15.1195 60.8364C22.1104 56.4433 32.0151 54.2082 44.3111 53.2349Z" fill="#161616" stroke="#1E6EF3" stroke-width="2.58775"/>
+<path d="M138.695 1.29443C176.172 1.29442 210.04 10.5976 234.495 25.5698C258.971 40.5548 273.84 61.0856 273.84 83.5376C273.84 105.99 258.971 126.52 234.495 141.505C210.04 156.478 176.172 165.78 138.695 165.78C101.218 165.78 67.3509 156.478 42.8956 141.505C18.4195 126.52 3.55013 105.99 3.55 83.5376C3.55 61.0855 18.4194 40.5548 42.8956 25.5698C67.3509 10.5976 101.218 1.29448 138.695 1.29443Z" fill="#1E6EF3" stroke="#1E6EF3" stroke-width="2.58775"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M168.432 90.0624L168.427 90.0635C167.2 95.051 163.449 99.6911 157.232 103.109C150.923 106.577 143.107 108.22 135.189 108.144L134.508 108.137L134.927 107.805C135.285 107.522 135.635 107.229 135.975 106.924C142.414 101.168 143.88 93.1394 140.467 83.1291C138.152 76.3752 139.227 71.1896 143.506 67.6303C146.274 65.3292 150.092 63.8093 153.837 62.8698C157.582 61.9306 161.272 61.5661 163.808 61.5861L172.05 61.6793C173.496 61.6958 174.651 62.5776 174.442 63.5038L168.432 90.0624ZM178.718 91.7212L186.731 56.3237C186.884 55.6477 186.04 55.004 184.986 54.992L129.748 54.3666L129.566 54.3668C119.315 54.2992 109.21 56.4419 101.04 60.9336C82.0118 71.3946 80.6927 90.635 98.0945 103.909C115.496 117.182 145.028 119.461 164.056 109C172.225 104.509 177.13 98.3989 178.691 91.8376L178.718 91.7212ZM130.785 61.2126L135.728 61.2684L135.27 61.6042C134.906 61.8702 134.552 62.1455 134.207 62.4306C127.721 67.7905 126.054 75.1144 129.144 84.1283C131.817 91.9711 130.861 97.9179 126.475 101.892C124.643 103.551 122.442 104.877 120.224 105.814L120.087 105.872L119.93 105.824C115.014 104.323 110.453 102.106 106.649 99.2046C93.3048 89.0262 94.3154 74.2714 108.908 66.2489C115.173 62.8045 122.924 61.1606 130.785 61.2126Z" fill="white"/></g>
+</svg></div></div></section><section class="th-info"><div class="divider-comp absolute-top"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-vflex th-info_layout"><div global="gridsReveal" global-dd="" class="w-layout-grid global-dd_grid"><div global-dd-wrapper="" class="w-layout-vflex global-dd_wrapper"><div global-dd-toggle="" class="w-layout-hflex global-dd_toggle"><div class="global-dd_number"><span>01</span></div><h3 class="h3-15px">Zero Technical Debt</h3></div><div global-dd-content="" class="w-layout-vflex global-dd_content"><div class="w-layout-vflex global-dd_content-wrapper"><div class="w-layout-vflex global-dd_top-block"><p class="ts-15px">Strict domain-driven design, automated integration tests, and clean modular APIs ensure your codebase stays fast and maintainable for years.</p></div><div class="w-layout-vflex global-dd_bottom-block"><div class="global-dd_bottom-anim" data-w-id="42da2c7c-3d62-7aaf-3352-d82bd3a9aad1" data-animation-type="lottie" data-src="assets/lottie/69f867f4147766ca08938d09_Sui_-_DeepBook_Web_-_Deeper_Markets_Better_Prices.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 269 168" fill="none" class="object-cover"><circle cx="0.762461" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="167.237" r="0.762461" fill="#A0A9B1"></circle></svg></div></div></div></div><div global-dd-wrapper="" class="w-layout-vflex global-dd_wrapper"><div global-dd-toggle="" class="w-layout-hflex global-dd_toggle"><div class="global-dd_number"><span>02</span></div><h3 class="h3-15px">Transparent Sprint Delivery</h3></div><div global-dd-content="" class="w-layout-vflex global-dd_content"><div class="w-layout-vflex global-dd_content-wrapper"><div class="w-layout-vflex global-dd_top-block"><p class="ts-15px">Direct Slack/Linear access to your engineers, live staging environments from Week 2, and bi-weekly production releases with full telemetry.</p></div><div class="w-layout-vflex global-dd_bottom-block"><div class="global-dd_bottom-anim" data-w-id="7eac52a8-3ead-87c0-8a3d-08f538911753" data-animation-type="lottie" data-src="assets/lottie/69f867f4895ddf4c19807198_Sui_-_DeepBook_Web_-_Transparent_Execution.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 269 168" fill="none" class="object-cover"><circle cx="0.762461" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="167.237" r="0.762461" fill="#A0A9B1"></circle></svg></div></div></div></div><div global-dd-wrapper="" class="w-layout-vflex global-dd_wrapper"><div global-dd-toggle="" class="w-layout-hflex global-dd_toggle"><div class="global-dd_number"><span>03</span></div><h3 class="h3-15px">Your Code, Your IP (100%)</h3></div><div global-dd-content="" class="w-layout-vflex global-dd_content"><div class="w-layout-vflex global-dd_content-wrapper"><div class="w-layout-vflex global-dd_top-block"><p class="ts-15px">We deploy directly into your AWS, GCP, or Azure organization. You own 100% of the repositories, intellectual property, and infrastructure.</p></div><div class="w-layout-vflex global-dd_bottom-block"><div class="global-dd_bottom-anim" data-w-id="9531bbfd-225a-704b-1ecd-535f5d5f4e53" data-animation-type="lottie" data-src="assets/lottie/69f36084e84fff3bc17cae09_Sui_-_DeepBook_Web_-_Your_Keys_Your_Funds.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 269 168" fill="none" class="object-cover"><circle cx="0.762461" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="167.237" r="0.762461" fill="#A0A9B1"></circle></svg></div></div></div></div><div global-dd-wrapper="" class="w-layout-vflex global-dd_wrapper"><div global-dd-toggle="" class="w-layout-hflex global-dd_toggle"><div class="global-dd_number"><span>04</span></div><h3 class="h3-15px">Performance That Matters</h3></div><div global-dd-content="" class="w-layout-vflex global-dd_content"><div class="w-layout-vflex global-dd_content-wrapper"><div class="w-layout-vflex global-dd_top-block"><p class="ts-15px">Sub-50ms API responses, 60fps interfaces, and auto-scaling cloud topologies engineered to handle 100x traffic spikes effortlessly.</p></div><div class="w-layout-vflex global-dd_bottom-block"><div class="global-dd_bottom-anim" data-w-id="a7adc898-d005-9671-913b-80df0727db3d" data-animation-type="lottie" data-src="assets/lottie/69f360841670e4b02ff8c93c_Sui_-_DeepBook_Web_-_Speed_That_Matters.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 269 168" fill="none" class="object-cover"><circle cx="0.762461" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="0.762461" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="28.5086" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="56.2547" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="84.0007" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="111.745" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="139.491" r="0.762461" fill="#A0A9B1"></circle><circle cx="0.762461" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="34.197" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="67.6316" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="101.065" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="134.5" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="167.934" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="201.369" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="234.803" cy="167.237" r="0.762461" fill="#A0A9B1"></circle><circle cx="268.237" cy="167.237" r="0.762461" fill="#A0A9B1"></circle></svg></div></div></div></div></div></div></div></div><div class="divider-comp"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="global_info-wrapper"><div class="w-layout-grid global_info-grid"><div class="w-layout-vflex global_info-item"><span class="global_info-number">99.99%</span><span class="global_info-desc">Production SLA Uptime</span><div class="global_cube-bottom"></div><div class="global_cube-top"></div></div><div id="w-node-_4e86dd3b-2fe9-f6fb-620e-b75c7b13fd24-96c22621" class="w-layout-vflex global_info-item is--black"><span class="global_info-number">140+</span><span class="global_info-desc">Custom Systems Shipped</span><div class="global_cube-bottom"></div><div class="global_cube-top"></div></div><div id="w-node-_4e86dd3b-2fe9-f6fb-620e-b75c7b13fd2b-96c22621" class="w-layout-vflex global_info-item is--grey"><span class="global_info-number">38ms</span><span class="global_info-desc">Global P95 API Latency</span><div class="global_cube-bottom is--black"></div><div class="global_cube-top is--black"></div></div><div id="w-node-_4e86dd3b-2fe9-f6fb-620e-b75c7b13fd32-96c22621" class="w-layout-vflex global_info-item is--white"><span class="global_info-number">2.8B</span><span class="global_info-desc mob_mw-140">Daily Requests Orchestrated</span><div class="global_cube-bottom is--black"></div><div class="global_cube-top is--black"></div></div></div></div></section><section class="th-learn"><div class="divider-comp showonlymob"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-vflex th-learn_layout"><div class="w-layout-grid th-learn_grid-1"><div class="mob_mw-300"><h2 class="h2-48px color-black">Architecture Blueprints &amp; Playbooks</h2></div><div class="w-layout-vflex gap-40 mob_gap-32"><div class="mw-340"><p class="ts-18px color-black-50">Explore how Rodin Group LLC architects high-throughput distributed systems, enterprise RAG pipelines, and zero-downtime cloud migrations.</p></div><a global="textStagger" href="" target="_blank" class="cta-button is--blue hdn"><span global-target="">Explore the Education Hub</span></a></div></div></div></div></div><div class="divider-comp showonlymob"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div global="gridsReveal" global-dd="" class="w-layout-grid th-learn_grid"><a global-dd-wrapper="" id="w-node-b73dba05-7de9-069f-0767-31b569b99f66-96c22621" href="#case-chronos" data-case-study="chronos" target="_blank" class="th-learn_grid-item w-inline-block"><div global-dd-toggle="" class="w-layout-hflex th-learn_heading-block"><div class="cube-28"></div><h3 class="th-learn_grid-heading">Zero-Downtime Legacy Modernization</h3></div><div global-dd-content="" class="th-learn_content"><div class="w-layout-hflex th-learn_content-block"><div class="mw-260"><p class="ts-15px">How we strangle monolithic legacy ERPs into event-driven Rust and Go microservices using CDC (Change Data Capture) without disrupting live operations.</p></div><div class="w-layout-hflex gap-16 hy-center hy-space-between full-width"><div class="th-learn_category"><span>Architecture</span></div><span class="ts-12px">5 min read</span></div></div></div></a><a global-dd-wrapper="" id="w-node-_4682e2f4-8031-b504-17db-7d32c4ea4745-96c22621" href="#case-nexusai" data-case-study="nexusai" target="_blank" class="th-learn_grid-item w-inline-block"><div global-dd-toggle="" class="w-layout-hflex th-learn_heading-block"><div class="cube-28"></div><h3 class="th-learn_grid-heading">Enterprise RAG &amp; Agentic Workflows</h3></div><div global-dd-content="" class="th-learn_content"><div class="w-layout-hflex th-learn_content-block"><div class="mw-260"><p class="ts-15px">Architecting hallucination-free enterprise AI systems with hybrid vector retrieval, RBAC document permissions, and deterministic tool execution.</p></div><div class="w-layout-hflex gap-16 hy-center hy-space-between full-width"><div class="th-learn_category"><span>AI &amp; Cloud</span></div><span class="ts-12px">8 min read</span></div></div></div></a><a global-dd-wrapper="" id="w-node-_42057412-7f83-3ffa-5539-36e4df451778-96c22621" href="#case-aetherpay" data-case-study="aetherpay" target="_blank" class="th-learn_grid-item w-inline-block"><div global-dd-toggle="" class="w-layout-hflex th-learn_heading-block"><div class="cube-28"></div><h3 class="th-learn_grid-heading">Deterministic FinTech Ledgers</h3></div><div global-dd-content="" class="th-learn_content"><div class="w-layout-hflex th-learn_content-block"><div class="mw-260"><p class="ts-15px">Designing double-entry financial accounting cores with idempotent Kafka event sourcing, cryptographic audit trails, and 100k+ TPS throughput.</p></div><div class="w-layout-hflex gap-16 hy-center hy-space-between full-width"><div class="th-learn_category"><span>FinTech Core</span></div><span class="ts-12px">6 min read</span></div></div></div></a><a global-dd-wrapper="" id="w-node-_41e1d860-6df7-7bb3-2c5a-c35dd80f6016-96c22621" href="#case-vanguard" data-case-study="vanguard" target="_blank" class="th-learn_grid-item w-inline-block"><div global-dd-toggle="" class="w-layout-hflex th-learn_heading-block"><div class="cube-28"></div><h3 class="th-learn_grid-heading">Multi-Region Kubernetes &amp; eBPF</h3></div><div global-dd-content="" class="th-learn_content"><div class="w-layout-hflex th-learn_content-block"><div class="mw-260"><p class="ts-15px">Cutting enterprise cloud spend by 48% while achieving 99.99% multi-region availability with Cilium eBPF service meshes and predictive autoscaling.</p></div><div class="w-layout-hflex gap-16 hy-center hy-space-between full-width"><div class="th-learn_category"><span>AI &amp; Cloud</span></div><span class="ts-12px">4 min read</span></div></div></div></a></div></div></div></section><section class="th-setup"><div class="divider-comp absolute-top"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-grid th-setup_grid"><div class="th-setup_first-grid"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 876 537" fill="none" class="th-setup_ilust hide"><path d="M692.276 205.938C613.872 162.692 558.776 131.563 477.309 86.6276" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M620.004 247.815L406.314 128.379" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M763.297 164.545L548.147 46.0865" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M692.262 83.1328C688.239 86.4447 482.875 207.233 479.068 207.233" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M621.522 44.5492L407.278 166.501" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M764.818 124.879L552.108 247.475" stroke="#E8E8E8" stroke-width="2.45933"></path><g filter="url(#filter0_f_8098_21843)"><path d="M348.598 136.224L583.83 14.5469L865.793 164.972L724.154 221.132L348.598 136.224Z" fill="url(#paint0_linear_8098_21843)"></path></g><path d="M249.972 451.688C171.567 408.442 116.471 377.313 35.0043 332.378" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M177.696 493.565L-35.9943 374.129" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M320.993 410.303L105.842 291.844" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M249.957 328.883C245.934 332.195 40.5704 452.983 36.7632 452.983" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M179.213 290.299L-35.0306 412.251" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M322.513 370.629L109.803 493.225" stroke="#E8E8E8" stroke-width="2.45933"></path><path d="M359.796 170.489C370.236 170.397 380.622 172.583 388.505 176.991L538.18 260.688C539.339 261.336 540.5 261.604 541.635 261.526C542.759 261.449 543.768 261.038 544.647 260.47C546.369 259.358 547.746 257.545 548.791 255.953C549.154 255.4 549.487 254.852 549.79 254.349C549.791 254.827 549.794 255.366 549.795 255.952C549.798 258.238 549.798 261.245 549.796 264.253C549.794 267.26 549.789 270.268 549.785 272.555C549.783 273.698 549.781 274.661 549.779 275.354C549.778 275.7 549.777 275.978 549.776 276.178C549.776 276.277 549.776 276.357 549.775 276.415C549.775 276.444 549.776 276.467 549.775 276.484C549.775 276.502 549.774 276.509 549.774 276.509C549.663 281.792 546.09 287.355 538.449 291.806L390.244 378.124C382.439 382.67 372.092 385.038 361.652 385.13C351.213 385.222 340.827 383.036 332.944 378.628L183.269 294.933C175.693 290.697 172.017 285.317 171.694 280.13C171.694 280.128 171.694 280.119 171.693 280.104C171.693 280.084 171.692 280.058 171.691 280.025C171.69 279.959 171.687 279.87 171.686 279.761C171.682 279.542 171.679 279.245 171.675 278.881C171.667 278.153 171.659 277.161 171.652 275.993C171.639 273.658 171.627 270.624 171.622 267.589C171.617 264.553 171.619 261.519 171.63 259.187C171.634 258.436 171.642 257.759 171.647 257.179C171.997 257.764 172.393 258.425 172.824 259.093C173.84 260.665 175.163 262.457 176.8 263.563C177.638 264.13 178.605 264.55 179.688 264.635C180.786 264.721 181.899 264.455 182.999 263.814L331.204 177.496C339.009 172.95 349.356 170.581 359.796 170.489Z" fill="black" stroke="#727272" stroke-width="2.70799"></path><path d="M186.19 229.685L320.844 151.259C342.199 138.822 376.996 138.517 398.566 150.578L534.545 226.616C556.115 238.677 556.289 258.537 534.935 270.975L400.28 349.401C378.925 361.839 344.128 362.144 322.558 350.082L186.579 274.045C165.009 261.984 164.835 242.123 186.19 229.685Z" fill="black" stroke="#727272" stroke-width="2.70799"></path><path d="M466.644 310.321C388.239 267.075 333.143 235.946 251.676 191.01" stroke="white" stroke-width="2.45933"></path><path d="M394.368 352.198L180.678 232.762" stroke="white" stroke-width="2.45933"></path><path d="M537.665 268.936L322.514 150.477" stroke="white" stroke-width="2.45933"></path><path d="M466.633 187.523C462.61 190.835 257.246 311.623 253.439 311.623" stroke="white" stroke-width="2.45933"></path><path d="M395.885 148.932L181.641 270.884" stroke="white" stroke-width="2.45933"></path><path d="M539.189 229.261L326.479 351.858" stroke="white" stroke-width="2.45933"></path><path d="M186.19 229.498L320.844 151.072C342.199 138.634 376.996 138.33 398.566 150.391L534.545 226.428C556.115 238.49 556.289 258.35 534.935 270.788L400.28 349.214C378.925 361.651 344.128 361.956 322.558 349.895L186.579 273.858C165.009 261.796 164.835 241.936 186.19 229.498Z" stroke="white" stroke-width="2.70799"></path><path d="M430.935 40.8184V53.6455L361.091 93.9697L290.565 54.8779L290.566 42.1621L360.41 10.9961L430.935 40.8184Z" fill="black" stroke="#1E6EF3" stroke-width="2.45933"></path><path d="M429.667 39.8018L361.091 79.3955L291.833 41.0059L360.409 1.41211L429.667 39.8018Z" fill="#1E6EF3" stroke="#1E6EF3" stroke-width="2.45933"></path><line x1="361.091" y1="94.3984" x2="361.091" y2="79.7689" stroke="#1E6EF3" stroke-width="2.45933"></line><path d="M362.54 120.584V133.411L292.696 173.735L222.171 134.644L222.172 121.928L292.016 90.7617L362.54 120.584Z" fill="black" stroke="#727272" stroke-width="2.45933"></path><path d="M361.272 119.567L292.696 159.161L223.438 120.771L292.015 81.1777L361.272 119.567Z" fill="#727272" stroke="#727272" stroke-width="2.45933"></path><line x1="292.708" y1="174.156" x2="292.708" y2="159.527" stroke="#727272" stroke-width="2.45933"></line><path d="M499.716 216.943V229.771L429.872 270.095L359.347 231.003L359.348 218.287L429.191 187.121L499.716 216.943Z" fill="black" stroke="#EFEFEB" stroke-width="2.45933"></path><path d="M498.448 215.935L429.872 255.528L360.614 217.139L429.19 177.545L498.448 215.935Z" fill="#EFEFEB" stroke="#EFEFEB" stroke-width="2.45933"></path><line x1="429.872" y1="270.523" x2="429.872" y2="255.894" stroke="#EFEFEB" stroke-width="2.45933"></line><path d="M430.938 201.389V214.216L361.095 254.54L290.569 215.448L290.57 202.732L360.414 171.566L430.938 201.389Z" fill="black" stroke="#A0A9B1" stroke-width="2.45933"></path><path d="M429.671 200.372L361.095 239.966L291.837 201.576L360.413 161.982L429.671 200.372Z" fill="#A0A9B1" stroke="#A0A9B1" stroke-width="2.45933"></path><line x1="361.098" y1="254.969" x2="361.098" y2="240.339" stroke="#A0A9B1" stroke-width="2.45933"></line><g filter="url(#filter1_f_8098_21843)"><path d="M446.258 365.284L168.963 526.773L-113 376.348L70.7011 280.376L446.258 365.284Z" fill="url(#paint1_linear_8098_21843)"></path></g><defs><filter id="filter0_f_8098_21843" x="338.598" y="4.54688" width="537.195" height="226.586" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix"></feflood><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend><fegaussianblur stdDeviation="5" result="effect1_foregroundBlur_8098_21843"></fegaussianblur></filter><filter id="filter1_f_8098_21843" x="-123" y="270.375" width="579.258" height="266.398" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix"></feflood><feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend><fegaussianblur stdDeviation="5" result="effect1_foregroundBlur_8098_21843"></fegaussianblur></filter><lineargradient id="paint0_linear_8098_21843" x1="661.134" y1="57.0262" x2="580.019" y2="177.451" gradientUnits="userSpaceOnUse"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></lineargradient><lineargradient id="paint1_linear_8098_21843" x1="133.721" y1="444.482" x2="214.836" y2="324.057" gradientUnits="userSpaceOnUse"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></lineargradient></defs></svg><div class="th-setup_ilust" data-w-id="7abd0ff6-ce4d-817e-70c4-d3b6a1d662aa" data-animation-type="lottie" data-src="assets/lottie/69f9bf4c4fb1ef440c9e06e6_Sui_-_DeepBook_Web_-_Choose_Where_To_Trade.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="0" data-loading="lazy"></div></div><div id="w-node-e6dd81dd-0e46-f901-f12d-848921b8a567-96c22621" class="th-setup_second-grid"><div class="w-layout-vflex gap-48"><div class="w-layout-vflex gap-36"><h2 data-reveal="" class="h2-81px color-black">From Blueprint to Production in Weeks</h2><div class="mw-530"><p class="ts-18px color-black-50 mob_16px">Every engagement starts with a focused Architecture &amp; Discovery Sprint, aligning business KPIs with system topology, security posture, and a fixed delivery roadmap.</p></div><div class="mw-530 mob_mw-260"><p class="ts-18px color-blue mob_16px">Ready to scope your custom software platform? Kick off Discovery in 48 hours.</p></div></div></div><a global="textStagger" href="#contact-section" commandfor="project-modal" command="show-modal" class="cta-button is--blue"><span global-target="">Get set up</span></a></div></div></div></div></section><section class="th-platforms"><div class="divider-comp absolute-top-100 mob-64"><div class="w-layout-hflex divider-wrapper"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-hflex divider-cube_wrapper"><div class="divider-cube"></div><div class="divider-cube"></div></div></div></div><div class="divider-line negative dark-grey"></div></div></div><div class="padding-global"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-vflex th-platforms_layout"><div id="trade" class="w-layout-vflex th-platforms_heading-wrapper"><div class="mw-1024"><h2 data-reveal="" class="th-platforms_heading">Explore Systems Engineered by Rodin</h2></div><div class="mw-600"><p class="th-platforms_description">Filter our production portfolio across Cloud &amp; SaaS, Applied AI, FinTech Core, Mobile &amp; Edge, Enterprise ERP, and DevSecOps. Click any system to view its architecture blueprint.</p></div></div><div class="old-design-slider"><div class="w-layout-hflex th-platforms_filters-component"><div class="w-layout-hflex th-platforms_filters-block"><span data-filter="all" class="th-platforms_button active">All<div class="th-platforms_button-bg"></div></span><span data-filter="cloud" class="th-platforms_button">Cloud<div class="th-platforms_button-bg"></div></span><span data-filter="ai" class="th-platforms_button">AI &amp; Data<div class="th-platforms_button-bg"></div></span><span data-filter="fintech" class="th-platforms_button">FinTech<div class="th-platforms_button-bg"></div></span></div><div class="w-layout-hflex th-platforms_arrows-block"><div id="prev" class="th-platforms_button"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 9" fill="none" class="th-platforms_arrow"><rect width="1.39025" height="9.91337" transform="matrix(2.5601e-07 -1 -1 -2.5601e-07 10.5432 4.80469)" fill="currentColor"></rect><path d="M5.00411 8.24219L5.0038 6.65094L0.628088 3.33268L0.628392 4.92393L5.00411 8.24219Z" fill="currentColor"></path><path d="M5.00411 0L5.0038 1.59125L0.628086 4.9095L0.62839 3.31826L5.00411 0Z" fill="currentColor"></path></svg><div class="th-platforms_button-bg"></div></div><div id="next" class="th-platforms_button active"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 12 9" fill="none" class="th-platforms_arrow"><rect width="1.39025" height="9.91337" transform="matrix(-1.68587e-07 1 1 1.68587e-07 0.609375 3.4375)" fill="currentColor"></rect><path d="M6.14844 0L6.14874 1.59125L10.5245 4.9095L10.5242 3.31826L6.14844 0Z" fill="currentColor"></path><path d="M6.14844 8.24219L6.14874 6.65094L10.5245 3.33268L10.5242 4.92393L6.14844 8.24219Z" fill="currentColor"></path></svg><div class="th-platforms_button-bg"></div></div></div></div><div class="th-platforms_slider"><div global="gridsReveal" data-slider-wrapper="" class="w-layout-hflex th-platforms_slider-wrapper"><a data-slider-item="" href="#case-aetherpay" data-case-study="aetherpay" class="th-platforms_slider-item w-inline-block"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/aetherpay.svg" loading="lazy" alt="AetherPay Core" class="object-contain"/></div><h3 class="h3-18px mob_15px mob-uppercase">AetherPay Core</h3></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="object-contain"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><div class="mw-360 mob_mw-260"><p platforms-desc="" class="ts-15px">High-frequency multi-currency clearing, real-time settlement ledger, and programmable treasury engine processing 120,000+ TPS.</p></div><div class="th-platforms_category"><span data-category="fintech">FinTech Core</span></div></div></a><a data-slider-item="" href="#case-nexusai" data-case-study="nexusai" class="th-platforms_slider-item w-inline-block"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/nexusai.svg" loading="lazy" alt="NexusAI Studio" class="object-contain"/></div><h3 class="h3-18px mob_15px mob-uppercase">NexusAI Studio</h3></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="object-contain"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><div class="mw-360 mob_mw-260"><p platforms-desc="" class="ts-15px">Enterprise multi-agent LLM orchestration platform with hybrid vector RAG, deterministic guardrails, and private vLLM inference.</p></div><div class="th-platforms_category"><span data-category="ai">AI Systems</span></div></div></a><a data-slider-item="" href="#case-vanguard" data-case-study="vanguard" class="th-platforms_slider-item w-inline-block"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/vanguard.svg" loading="lazy" alt="VanguardMesh" class="object-contain"/></div><h3 class="h3-18px mob_15px mob-uppercase">VanguardMesh</h3></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="object-contain"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><div class="mw-360 mob_mw-260"><p platforms-desc="" class="ts-15px">Multi-region zero-trust Kubernetes control plane and eBPF service mesh automating workload placement and sub-second failover.</p></div><div class="th-platforms_category"><span data-category="cloud">Cloud Infra</span></div></div></a><a data-slider-item="" href="#case-chronos" data-case-study="chronos" class="th-platforms_slider-item w-inline-block"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/chronos.svg" loading="lazy" alt="Chronos ERP" class="object-contain"/></div><h3 class="h3-18px mob_15px mob-uppercase">Chronos ERP</h3></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="object-contain"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><div class="mw-360 mob_mw-260"><p platforms-desc="" class="ts-15px">Real-time enterprise resource planning and autonomous warehouse routing core synchronizing 64 global fulfillment centers.</p></div><div class="th-platforms_category"><span data-category="enterprise">Enterprise ERP</span></div></div></a><a data-slider-item="" href="#case-helios" data-case-study="helios" class="th-platforms_slider-item w-inline-block"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/helios.svg" loading="lazy" alt="HeliosMed Cloud" class="object-contain"/></div><h3 class="h3-18px mob_15px mob-uppercase">HeliosMed Cloud</h3></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="object-contain"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><div class="mw-360 mob_mw-260"><p platforms-desc="" class="ts-15px">HIPAA-compliant browser-based 3D DICOM medical imaging platform and AI diagnostic triage engine built with Rust and WebGPU.</p></div><div class="th-platforms_category"><span data-category="ai">HealthTech AI</span></div></div></a><a data-slider-item="" href="#case-strata" data-case-study="strata" class="th-platforms_slider-item w-inline-block"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/strata.svg" loading="lazy" alt="StrataStream OLAP" class="object-contain"/></div><h3 class="h3-18px mob_15px mob-uppercase">StrataStream OLAP</h3></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="object-contain"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><div class="mw-360 mob_mw-260"><p platforms-desc="" class="ts-15px">Petabyte-scale event streaming lakehouse and sub-200ms ClickHouse/Flink operational analytics engine ingesting 4.5M events/sec.</p></div><div class="th-platforms_category"><span data-category="ai">Data Mesh</span></div></div></a></div></div></div><div class="w-layout-vflex th-platforms_content-wrapper"><div class="th-platforms_filters-block"><div data-filter="all" global="textStagger" class="th-platforms_button active"><span global-target="" class="th-platforms_button-text">All Systems</span></div><div class="th-platforms_filters-wrapper w-dyn-list"><div role="list" class="th-platforms_filters-list w-dyn-items"><div role="listitem" class="collection-item w-dyn-item"><div data-filter="Cloud" global="textStagger" class="th-platforms_button"><span global-target="" class="th-platforms_button-text">Cloud &amp; SaaS</span></div></div><div role="listitem" class="collection-item w-dyn-item"><div data-filter="AI" global="textStagger" class="th-platforms_button"><span global-target="" class="th-platforms_button-text">AI &amp; Data</span></div></div><div role="listitem" class="collection-item w-dyn-item"><div data-filter="FinTech" global="textStagger" class="th-platforms_button"><span global-target="" class="th-platforms_button-text">FinTech Core</span></div></div><div role="listitem" class="collection-item w-dyn-item"><div data-filter="Mobile" global="textStagger" class="th-platforms_button"><span global-target="" class="th-platforms_button-text">Mobile &amp; Edge</span></div></div><div role="listitem" class="collection-item w-dyn-item"><div data-filter="Enterprise" global="textStagger" class="th-platforms_button"><span global-target="" class="th-platforms_button-text">Enterprise ERP</span></div></div><div role="listitem" class="collection-item w-dyn-item"><div data-filter="SecOps" global="textStagger" class="th-platforms_button"><span global-target="" class="th-platforms_button-text">DevSecOps</span></div></div></div></div></div><div class="w-layout-vflex th-platforms_list-block"><div class="full-width w-dyn-list"><div role="list" class="w-dyn-items"><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-aetherpay" data-case-study="aetherpay" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/aetherpay.svg" loading="lazy" alt="AetherPay Core" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">AetherPay Core</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">High-frequency multi-currency clearing, real-time settlement ledger, and programmable treasury engine processing 120,000+ TPS.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="FinTech" class="th-platforms_category-text">FinTech</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div></div></div><div class="full-width w-dyn-list"><div role="list" class="th-platforms_grid w-dyn-items"><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-nexusai" data-case-study="nexusai" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/nexusai.svg" loading="lazy" alt="NexusAI Studio" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">NexusAI Studio</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Enterprise multi-agent LLM orchestration platform with hybrid vector RAG, deterministic guardrails, and private vLLM inference.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="AI" class="th-platforms_category-text">AI</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-vanguard" data-case-study="vanguard" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/vanguard.svg" loading="lazy" alt="VanguardMesh" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">VanguardMesh</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Multi-region zero-trust Kubernetes control plane and eBPF service mesh automating workload placement and sub-second failover.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="SecOps" class="th-platforms_category-text">SecOps</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-chronos" data-case-study="chronos" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/chronos.svg" loading="lazy" alt="Chronos ERP" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">Chronos ERP</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Real-time enterprise resource planning and autonomous warehouse routing core synchronizing 64 global fulfillment centers.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Enterprise" class="th-platforms_category-text">Enterprise</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-helios" data-case-study="helios" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/helios.svg" loading="lazy" alt="HeliosMed Cloud" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">HeliosMed Cloud</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">HIPAA-compliant browser-based 3D DICOM medical imaging platform and AI diagnostic triage engine built with Rust and WebGPU.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="AI" class="th-platforms_category-text">AI</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-strata" data-case-study="strata" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/strata.svg" loading="lazy" alt="StrataStream OLAP" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">StrataStream OLAP</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Petabyte-scale event streaming lakehouse and sub-200ms ClickHouse/Flink operational analytics engine ingesting 4.5M events/sec.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="AI" class="th-platforms_category-text">AI</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-kinetix" data-case-study="kinetix" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/kinetix.svg" loading="lazy" alt="Kinetix IoT Suite" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">Kinetix IoT Suite</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">End-to-end embedded Rust firmware, geo-distributed MQTT 5.0 broker cluster, and native iOS/Android telemetry workstation for 280k devices.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Mobile" class="th-platforms_category-text">Mobile</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-quantvault" data-case-study="quantvault" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/quantvault.svg" loading="lazy" alt="QuantVault Engine" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">QuantVault Engine</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Ultra-low-latency C++20/Rust institutional execution gateway, FIX 4.4 protocol router, and real-time portfolio risk engine.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="FinTech" class="th-platforms_category-text">FinTech</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="SecOps" class="th-platforms_category-text">SecOps</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-omnib2b" data-case-study="omnib2b" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/omnib2b.svg" loading="lazy" alt="OmniB2B Commerce" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">OmniB2B Commerce</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Composable headless global B2B commerce architecture, <15ms dynamic CPQ pricing engine, and distributed order management system.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Enterprise" class="th-platforms_category-text">Enterprise</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-sentinel" data-case-study="sentinel" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/sentinel.svg" loading="lazy" alt="SentinelSec Mesh" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">SentinelSec Mesh</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Autonomous cloud security posture management (CSPM) and Linux eBPF kernel runtime threat detection for regulated enterprises.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="SecOps" class="th-platforms_category-text">SecOps</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-pulsebio" data-case-study="pulsebio" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/pulsebio.svg" loading="lazy" alt="PulseBio Compute" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">PulseBio Compute</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Distributed GPU workflow scheduler and GxP-compliant computational biology data lake orchestrating 12,000+ GPU hours daily.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="AI" class="th-platforms_category-text">AI</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-vertex" data-case-study="vertex" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/vertex.svg" loading="lazy" alt="VertexFleet OS" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">VertexFleet OS</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Geospatial dispatch optimization solver, H3 hexagonal indexing engine, and offline-first driver mobile OS for 1.4M daily deliveries.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Mobile" class="th-platforms_category-text">Mobile</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Enterprise" class="th-platforms_category-text">Enterprise</span></div></div></div></div></div></a></div><div data-slider-item="" role="listitem" class="w-dyn-item"><a href="#case-hyperion" data-case-study="hyperion" global="textStagger" class="th-platforms_grid-item"><div class="w-layout-hflex th-platforms_heading-block"><div class="w-layout-hflex gap-10 hy-center"><div class="w-layout-vflex th-platforms_logo-block"><img src="assets/img/systems/hyperion.svg" loading="lazy" alt="Hyperion IDP" class="object-contain"/></div><div class="th-platforms_name-block"><h3 global-target="" class="th-platforms_name">Hyperion IDP</h3></div></div><div class="w-layout-vflex th-platforms_arrow-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon second"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 13 11" fill="none" class="th-platforms_arrow-icon first"><path d="M12.7432 4.11621V6.68066L7.20898 10.7559V8.89453L10.9619 6.12891L0.000976562 6.12988L0 4.62988L10.917 4.62891L7.20898 1.86914V0L12.7432 4.11621Z" fill="white"></path></svg></div></div><div class="w-layout-hflex th-platforms_content-block"><p platforms-desc="" class="th-platforms_content-desc">Enterprise Internal Developer Portal (IDP) and Crossplane self-service control plane standardizing 600+ production microservices.</p><div class="w-dyn-list"><div role="list" class="th-platforms_category-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Cloud" class="th-platforms_category-text">Cloud</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="Enterprise" class="th-platforms_category-text">Enterprise</span></div></div><div role="listitem" class="w-dyn-item"><div class="w-layout-hflex th-platforms_category-block"><span data-category="SecOps" class="th-platforms_category-text">SecOps</span></div></div></div></div></div></a></div></div></div></div></div></div></div></div></section></main>
+<section id="contact-section" class="rodin-architect-section">
+  <div class="padding-global">
+    <div class="w-layout-blockcontainer container-1440 w-container">
+      <div class="rodin-architect_grid" data-configurator>
+        <div class="w-layout-vflex gap-32">
+          <div class="w-layout-vflex gap-16">
+            <span class="rodin-dialog_badge">Technical Discovery &amp; Architecture Mandate</span>
+            <h2 data-reveal="" class="h2-48px">Configure Your Custom Software Build</h2>
+            <p class="ts-18px color-white-50 mob_16px">Direct access to Principal Systems Architects. Select your engineering domain to preview your dedicated squad topology, reference tech stack, and delivery velocity.</p>
+          </div>
+          <div class="rodin-registry-card">
+            <div class="w-layout-hflex hy-center" style="justify-content:space-between;margin-bottom:0.75em;">
+              <span class="rodin-dialog_badge">Verified US Corporate Entity</span>
+              <button type="button" commandfor="certificate-modal" command="show-modal" class="rodin-dialog_close" style="font-size:0.7em;">View WY Certificate →</button>
+            </div>
+            <div class="rodin-registry-row"><span class="rodin-registry-key">Legal Entity</span><span class="rodin-registry-val">Rodin Group LLC</span></div>
+            <div class="rodin-registry-row"><span class="rodin-registry-key">Jurisdiction</span><span class="rodin-registry-val">State of Wyoming, USA</span></div>
+            <div class="rodin-registry-row"><span class="rodin-registry-key">Secretary of State ID</span><span class="rodin-registry-val">2025-001772051</span></div>
+            <div class="rodin-registry-row"><span class="rodin-registry-key">Principal Office</span><span class="rodin-registry-val">36 Shadow Brook Ln, Lander, WY 82520</span></div>
+            <div class="rodin-registry-row"><span class="rodin-registry-key">Managing Principal</span><span class="rodin-registry-val">Balázs Lederer</span></div>
+            <div class="rodin-registry-row"><span class="rodin-registry-key">Direct Phone / Desk</span><span class="rodin-registry-val">+1 (775) 782-6587 · hello@rodingroupll.com</span></div>
+          </div>
+        </div>
+
+        <div class="rodin-architect_card">
+          <div class="rodin-corner-cube tl"></div>
+          <div class="rodin-corner-cube tr"></div>
+          <div class="rodin-corner-cube bl"></div>
+          <div class="rodin-corner-cube br"></div>
+
+          <span class="rodin-label">01 / Select Primary Engineering Scope</span>
+          <div class="rodin-scope-pills" role="group" aria-label="Primary Engineering Scope">
+            <button type="button" class="rodin-scope-pill is-active" aria-pressed="true" data-scope-key="cloud-platform">Cloud-Native &amp; SaaS Platform</button>
+            <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="ai-systems">AI Agents, LLM &amp; RAG Systems</button>
+            <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="fintech-core">Distributed Core &amp; FinTech Ledger</button>
+            <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="mobile-iot">Mobile OS &amp; Edge Telemetry</button>
+            <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="dedicated-squad">Dedicated Senior Engineering Squad</button>
+          </div>
+
+          <div class="rodin-estimate-box" aria-live="polite">
+            <div>
+              <span class="rodin-estimate-item_label">Recommended Squad</span>
+              <span class="rodin-estimate-item_val" data-est-squad>1 Principal Architect · 3 Senior Full-Stack · 1 DevSecOps</span>
+            </div>
+            <div>
+              <span class="rodin-estimate-item_label">Reference Architecture</span>
+              <span class="rodin-estimate-item_val" data-est-stack>TypeScript / Next.js · Go / Rust APIs · PostgreSQL · Kubernetes</span>
+            </div>
+            <div>
+              <span class="rodin-estimate-item_label">Estimated Velocity</span>
+              <span class="rodin-estimate-item_val" data-est-sprint>MVP in 6–8 Weeks · Production V1 in 10–14 Weeks</span>
+            </div>
+          </div>
+
+          <form novalidate>
+            <input type="hidden" name="selected_scope" value="Cloud-Native & SaaS Platform" />
+            <div class="rodin-form-grid">
+              <div class="rodin-field">
+                <label class="rodin-label" for="sec-name">Your Full Name *</label>
+                <span id="sec-name-hint" class="rodin-hint">Principal, CTO, or Product Lead</span>
+                <input class="rodin-input" type="text" id="sec-name" name="client_name" required minlength="2" autocomplete="name" aria-describedby="sec-name-hint" aria-errormessage="sec-name-err" placeholder="e.g. Alex Mercer" />
+                <div id="sec-name-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please enter your full name (at least 2 characters).</div>
+              </div>
+              <div class="rodin-field">
+                <label class="rodin-label" for="sec-email">Work Email Address *</label>
+                <span id="sec-email-hint" class="rodin-hint">Format: name@company.com</span>
+                <input class="rodin-input" type="email" id="sec-email" name="client_email" required autocomplete="email" aria-describedby="sec-email-hint" aria-errormessage="sec-email-err" placeholder="alex@enterprise.io" />
+                <div id="sec-email-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please enter a valid corporate email address.</div>
+              </div>
+              <div class="rodin-field">
+                <label class="rodin-label" for="sec-company">Company / Organization *</label>
+                <span id="sec-company-hint" class="rodin-hint">Legal entity or venture name</span>
+                <input class="rodin-input" type="text" id="sec-company" name="client_company" required minlength="2" autocomplete="organization" aria-describedby="sec-company-hint" aria-errormessage="sec-company-err" placeholder="Acme Systems Inc." />
+                <div id="sec-company-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please provide your company or project name.</div>
+              </div>
+              <div class="rodin-field">
+                <label class="rodin-label" for="sec-budget">Target Engagement Tier</label>
+                <span id="sec-budget-hint" class="rodin-hint">100% IP ownership &amp; fixed or sprint billing</span>
+                <select class="rodin-select" id="sec-budget" name="project_budget" aria-describedby="sec-budget-hint">
+                  <option value="$50k – $100k (MVP / Architecture Sprint)">$50k – $100k (MVP / Architecture Sprint)</option>
+                  <option value="$100k – $250k (Full Production System)" selected>$100k – $250k (Full Production System)</option>
+                  <option value="$250k – $500k+ (Multi-Squad Enterprise Core)">$250k – $500k+ (Multi-Squad Enterprise Core)</option>
+                  <option value="Dedicated Monthly Retainer ($25k+/mo)">Dedicated Monthly Squad Retainer ($25k+/mo)</option>
+                </select>
+              </div>
+              <div class="rodin-field full-span">
+                <label class="rodin-label" for="sec-brief">Architectural Brief &amp; Objectives *</label>
+                <span id="sec-brief-hint" class="rodin-hint">Describe your target system, integration requirements, or target launch window</span>
+                <textarea class="rodin-textarea" id="sec-brief" name="project_brief" rows="3" required minlength="10" aria-describedby="sec-brief-hint" aria-errormessage="sec-brief-err" placeholder="We are engineering a high-throughput B2B platform and custom AI workflow..."></textarea>
+                <div id="sec-brief-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please include a short summary of your technical goals (10+ characters).</div>
+              </div>
+            </div>
+            <div class="rodin-submit-row">
+              <span class="rodin-hint" style="margin:0;">Mutual NDA protection prior to code review · Response SLA &lt; 4 hrs</span>
+              <button type="submit" global="textStagger" class="cta-button is--blue"><span global-target="">Request Architecture Call →</span></button>
+            </div>
+            <div class="rodin-status-banner" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer"><div class="padding-global full-width"><div class="w-layout-blockcontainer container-1440 w-container"><div class="w-layout-grid footer-grid"><div class="footer_logo-ilust"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 88 59" fill="none" class="object-contain"><path d="M60.877 0C75.3867 0.000198623 87.1493 11.7627 87.1494 26.2725H0V0H60.877ZM0 32.2275H36.5V58.5H0V32.2275Z" fill="white"></path><path d="M43.5 32.2275H70.8L87.1494 58.5H59.8494L43.5 32.2275Z" fill="#1E6EF3"></path></svg></div><div class="w-layout-grid footer_links-grid"><div class="w-layout-vflex gap-16"><span class="footer_links-heading">Capabilities</span><ul class="footer-list"><li class="footer_list-item"><a href="capabilities.html" class="w-inline-block"><span>Cloud-Native Platforms</span></a></li><li class="footer_list-item"><a href="capabilities.html#ai-engineering" class="w-inline-block"><span>AI Agents &amp; LLM Systems</span></a></li><li class="footer_list-item"><a href="capabilities.html#distributed-core" class="w-inline-block"><span>Distributed &amp; FinTech Core</span></a></li><li class="footer_list-item"><a href="capabilities.html#distributed-core" class="w-inline-block"><span>Mobile &amp; Edge Telemetry</span></a></li></ul></div><div class="w-layout-vflex gap-16"><span class="footer_links-heading">Case Studies</span><ul class="footer-list"><li class="footer_list-item"><a href="solutions.html" class="w-inline-block"><span>Engineered Systems</span></a></li><li class="footer_list-item"><a href="#case-aetherpay" data-case-study="aetherpay" class="w-inline-block"><span>AetherPay Ledger</span></a></li><li class="footer_list-item"><a href="#case-nexusai" data-case-study="nexusai" class="w-inline-block"><span>NexusAI Studio</span></a></li><li class="footer_list-item"><a href="#case-vanguard" data-case-study="vanguard" class="w-inline-block"><span>VanguardMesh K8s</span></a></li></ul></div><div class="w-layout-vflex gap-16"><span class="footer_links-heading">Company</span><ul class="footer-list"><li class="footer_list-item"><a href="company.html" class="w-inline-block"><span>Delivery Methodology</span></a></li><li class="footer_list-item"><a href="company.html#corporate-registry" class="w-inline-block"><span>Corporate Registry</span></a></li><li class="footer_list-item"><a href="#certificate-modal" commandfor="certificate-modal" command="show-modal" class="w-inline-block"><span>Wyoming Filing (ID 2025-001772051)</span></a></li><li class="footer_list-item"><a href="privacy-policy.html" class="w-inline-block"><span>Privacy Policy</span></a></li><li class="footer_list-item"><a href="terms-of-use.html" class="w-inline-block"><span>Terms of Use &amp; MSA</span></a></li></ul></div><div class="w-layout-vflex gap-16"><span class="footer_links-heading">Headquarters</span><ul class="footer-list"><li class="footer_list-item"><span style="color:#ffffffcc;font-size:0.875em;line-height:1.5;display:block;">Rodin Group LLC<br/>36 Shadow Brook Ln<br/>Lander, WY 82520, USA</span></li><li class="footer_list-item"><a href="tel:+17757826587" class="w-inline-block"><span>+1 (775) 782-6587</span></a></li><li class="footer_list-item"><a href="mailto:hello@rodingroupll.com" class="w-inline-block"><span>hello@rodingroupll.com</span></a></li></ul></div></div></div><div class="rodin-footer-legal"><span>© 2025–2026 Rodin Group LLC. All rights reserved. Registered in the State of Wyoming (Original ID: 2025-001772051 · Organizer: Balázs Lederer).</span><button type="button" commandfor="certificate-modal" command="show-modal" class="rodin-carousel-pause">Verify State of Wyoming Certificate →</button></div></div></div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1440 140" fill="none" class="footer-logo"><path d="M18.694104441712543 2.9166711208509355H74.53300550537173Q91.22710994708427 2.9166711208509355 103.50783045593028 8.385429472446432Q115.78855096477629 13.85418782404193 122.50456999305146 23.928216366454663Q129.22058902132662 34.0022449088674 129.22058902132662 47.43428296541772Q129.22058902132662 62.01763856967236 121.54513870329785 72.47543962798653Q113.8696883852691 82.9332406863007 99.6701052969159 87.9222833930194L136.3203805655032 148.75022716339728H107.7293281308461L74.34111924742102 91.76000855203378H43.44743171735528V148.75022716339728H18.694104441712543ZM75.10866427922389 70.6525201774547Q88.54070233577421 70.6525201774547 96.1202095248276 64.5121599230317Q103.699716713881 58.3717996686087 103.699716713881 47.43428296541772Q103.699716713881 36.49676626222674 96.1202095248276 30.35640600780374Q88.54070233577421 24.21604575338074 75.10866427922389 24.21604575338074H43.44743171735528V70.6525201774547ZM147.37302902346462 75.83344914212411Q147.37302902346462 53.57464321984072 156.3916831471484 36.49676626222675Q165.4103372708322 19.418889304612776 181.5287829386926 10.016462665027547Q197.64722860655297 0.6140360254423172 218.56283072318132 0.6140360254423172Q239.47843283980967 0.6140360254423172 255.59687850767006 10.016462665027547Q271.71532417553044 19.418889304612776 280.73397829921424 36.49676626222675Q289.75263242289805 53.57464321984072 289.75263242289805 75.83344914212411Q289.75263242289805 98.09225506440751 280.73397829921424 115.17013202202149Q271.71532417553044 132.24800897963547 255.59687850767006 141.65043561922067Q239.47843283980967 151.0528622588059 218.56283072318132 151.0528622588059Q197.64722860655297 151.0528622588059 181.5287829386926 141.65043561922067Q165.4103372708322 132.24800897963547 156.3916831471484 115.17013202202149Q147.37302902346462 98.09225506440751 147.37302902346462 75.83344914212411ZM218.56283072318132 130.90480517398044Q231.99486877973163 130.90480517398044 242.35672670907047 123.99689988775455Q252.71858463840928 117.08899460152867 258.3792292479555 104.61638783473194Q264.0398738575017 92.14378106793521 264.0398738575017 75.83344914212411Q264.0398738575017 59.52311721631301 258.3792292479555 47.05051044951628Q252.71858463840928 34.57790368271955 242.35672670907047 27.669998396493675Q231.99486877973163 20.7620931102678 218.56283072318132 20.7620931102678Q205.130792666631 20.7620931102678 194.76893473729217 27.669998396493675Q184.40707680795336 34.57790368271955 178.74643219840715 47.05051044951628Q173.08578758886097 59.52311721631301 173.08578758886097 75.83344914212411Q173.08578758886097 92.14378106793521 178.74643219840715 104.61638783473194Q184.40707680795336 117.08899460152867 194.76893473729217 123.99689988775455Q205.130792666631 130.90480517398044 218.56283072318132 130.90480517398044ZM312.89411513175475 2.9166711208509355H364.7034047784488Q386.7703244427815 2.9166711208509355 403.2725426265433 11.167780212731856Q419.7747608103051 19.418889304612776 428.7934149339889 35.82516435939923Q437.8120690576727 52.23143941418569 437.8120690576727 75.83344914212411Q437.8120690576727 99.43545887006253 428.7934149339889 115.841733924849Q419.7747608103051 132.24800897963547 403.2725426265433 140.49911807151636Q386.7703244427815 148.75022716339728 364.7034047784488 148.75022716339728H312.89411513175475ZM365.27906355230095 127.4508525308675Q380.0543054145063 127.4508525308675 390.60804960179587 121.5023785343952Q401.1617937890854 115.55390453792292 406.7264952696562 103.94478593190442Q412.2911967502271 92.33566732588594 412.2911967502271 75.83344914212411Q412.2911967502271 59.3312309583623 406.7264952696562 47.7221123523438Q401.1617937890854 36.1129937463253 390.60804960179587 30.16451974985302Q380.0543054145063 24.21604575338074 365.27906355230095 24.21604575338074H337.6474424073975V127.4508525308675ZM461.33732428243087 2.9166711208509355H486.0906515580736V148.75022716339728H461.33732428243087ZM517.2913571008604 2.9166711208509355H566.6061253941951L623.5963440055586 145.8719332941365V2.9166711208509355H648.3496712812014V148.75022716339728H599.0349029878666L542.0446843765031 5.794964990111737V148.75022716339728H517.2913571008604ZM715.5482388155433 75.83344914212411Q715.5482388155433 53.57464321984072 724.4709498102517 36.49676626222675Q733.3936608049601 19.418889304612776 749.416163343845 10.016462665027547Q765.4386658827301 0.6140360254423172 785.9704954834571 0.6140360254423172Q803.2402586990218 0.6140360254423172 816.672296755572 6.274680634988528Q830.1043348121224 11.935325244534738 839.1229889358062 22.585012560799633Q848.14164305949 33.23469987706453 852.171254476455 48.39371425517132H826.266609653108Q821.6613394622908 35.53733497247315 811.4913677909027 28.149714041370473Q801.3213961195146 20.7620931102678 785.9704954834571 20.7620931102678Q772.5384574269067 20.7620931102678 762.464428884494 27.669998396493675Q752.3904003420813 34.57790368271955 746.8256988615104 47.05051044951628Q741.2609973809396 59.52311721631301 741.2609973809396 75.83344914212411Q741.2609973809396 92.14378106793521 746.9216419904858 104.61638783473194Q752.582286600032 117.08899460152867 762.9441445293708 123.99689988775455Q773.3060024587096 130.90480517398044 786.9299267732107 130.90480517398044Q799.4025335400074 130.90480517398044 808.9968464375434 126.0117055962371Q818.5911593350793 121.11860601849376 824.0599176866748 111.62023624993319Q829.5286760382703 102.12186648137259 829.720562296221 88.881714682773H780.2139077449355V68.34988508204607H854.282003313913V148.75022716339728H833.3664011972846V112.86749692661286Q830.2962210700731 123.22935485595167 823.9639745576994 131.76829333475865Q817.6317280453256 140.30723181356566 807.2698701159868 145.68004703618578Q796.9080121866481 151.0528622588059 782.9003153562455 151.0528622588059Q764.4792345929766 151.0528622588059 749.128333956919 141.74637874819604Q733.7774333208615 132.43989523758617 724.6628360682024 115.3620182799722Q715.5482388155433 98.28414132235822 715.5482388155433 75.83344914212411ZM881.4530974397347 2.9166711208509355H937.291998503394Q953.9861029451065 2.9166711208509355 966.2668234539525 8.385429472446432Q978.5475439627985 13.85418782404193 985.2635629910737 23.928216366454663Q991.9795820193489 34.0022449088674 991.9795820193489 47.43428296541772Q991.9795820193489 62.01763856967236 984.3041317013201 72.47543962798653Q976.6286813832913 82.9332406863007 962.4290982949382 87.9222833930194L999.0793735635255 148.75022716339728H970.4883211288683L937.1001122454433 91.76000855203378H906.2064247153775V148.75022716339728H881.4530974397347ZM937.867657277246 70.6525201774547Q951.2996953337964 70.6525201774547 958.8792025228498 64.5121599230317Q966.4587097119032 58.3717996686087 966.4587097119032 47.43428296541772Q966.4587097119032 36.49676626222674 958.8792025228498 30.35640600780374Q951.2996953337964 24.21604575338074 937.867657277246 24.21604575338074H906.2064247153775V70.6525201774547ZM1010.1320220214869 75.83344914212411Q1010.1320220214869 53.57464321984072 1019.1506761451708 36.49676626222675Q1028.1693302688545 19.418889304612776 1044.2877759367148 10.016462665027547Q1060.4062216045752 0.6140360254423172 1081.3218237212036 0.6140360254423172Q1102.237425837832 0.6140360254423172 1118.3558715056924 10.016462665027547Q1134.4743171735527 19.418889304612776 1143.4929712972364 36.49676626222675Q1152.5116254209202 53.57464321984072 1152.5116254209202 75.83344914212411Q1152.5116254209202 98.09225506440751 1143.4929712972364 115.17013202202149Q1134.4743171735527 132.24800897963547 1118.3558715056924 141.65043561922067Q1102.237425837832 151.0528622588059 1081.3218237212036 151.0528622588059Q1060.4062216045752 151.0528622588059 1044.2877759367148 141.65043561922067Q1028.1693302688545 132.24800897963547 1019.1506761451708 115.17013202202149Q1010.1320220214869 98.09225506440751 1010.1320220214869 75.83344914212411ZM1081.3218237212036 130.90480517398044Q1094.7538617777539 130.90480517398044 1105.1157197070927 123.99689988775455Q1115.4775776364315 117.08899460152867 1121.1382222459779 104.61638783473194Q1126.798866855524 92.14378106793521 1126.798866855524 75.83344914212411Q1126.798866855524 59.52311721631301 1121.1382222459779 47.05051044951628Q1115.4775776364315 34.57790368271955 1105.1157197070927 27.669998396493675Q1094.7538617777539 20.7620931102678 1081.3218237212036 20.7620931102678Q1067.8897856646533 20.7620931102678 1057.5279277353145 27.669998396493675Q1047.1660698059757 34.57790368271955 1041.5054251964293 47.05051044951628Q1035.8447805868832 59.52311721631301 1035.8447805868832 75.83344914212411Q1035.8447805868832 92.14378106793521 1041.5054251964293 104.61638783473194Q1047.1660698059757 117.08899460152867 1057.5279277353145 123.99689988775455Q1067.8897856646533 130.90480517398044 1081.3218237212036 130.90480517398044ZM1174.1180180661713 90.60869100432947V90.22491848842803V2.9166711208509355H1198.871345341814V92.14378106793521V92.52755358383666Q1198.871345341814 130.90480517398044 1233.2189855149927 130.90480517398044Q1267.3747394302206 130.90480517398044 1267.3747394302206 92.14378106793521V2.9166711208509355H1292.1280667058634V90.22491848842803Q1292.1280667058634 119.77540221283874 1277.9284836175102 135.4141322358223Q1263.728900529157 151.0528622588059 1233.2189855149927 151.0528622588059Q1174.1180180661713 151.0528622588059 1174.1180180661713 90.60869100432947ZM1321.7936821850446 2.9166711208509355H1377.440696990753Q1395.4780052381207 2.9166711208509355 1408.3343845208187 8.385429472446432Q1421.190763803517 13.85418782404193 1428.0027259607675 24.311988882356104Q1434.814688118018 34.76978994067028 1434.814688118018 49.54503180287563Q1434.814688118018 64.32027366508098 1428.0027259607675 74.77807472339515Q1421.190763803517 85.23587578170934 1408.3343845208187 90.70463413330484Q1395.4780052381207 96.17339248490032 1377.440696990753 96.17339248490032H1346.5470094606874V148.75022716339728H1321.7936821850446ZM1378.0163557646051 75.06590411032124Q1393.175370142712 75.06590411032124 1401.1386498476668 68.63771446897215Q1409.1019295526216 62.20952482762307 1409.1019295526216 49.54503180287563Q1409.1019295526216 36.880538778128184 1401.1386498476668 30.548292265754462Q1393.175370142712 24.21604575338074 1378.0163557646051 24.21604575338074H1346.5470094606874V75.06590411032124Z" fill="white"></path></svg></footer></div>
+
+<!-- 1. Project Scope & Consultation Modal (<dialog closedby="any">) -->
+<dialog id="project-modal" class="rodin-dialog" closedby="any" aria-labelledby="projectModalTitle">
+  <div class="rodin-dialog_header">
+    <div>
+      <span class="rodin-dialog_badge">Rodin Group LLC · Custom Software Mandate</span>
+      <h2 id="projectModalTitle" style="font-size:1.35em;font-weight:500;margin-top:0.2em;">Initiate an Engineering Discovery</h2>
+    </div>
+    <button type="button" commandfor="project-modal" command="close" class="rodin-dialog_close">ESC / Close ✕</button>
+  </div>
+  <div class="rodin-dialog_body" data-configurator>
+    <span class="rodin-label">Select Target Architecture Domain</span>
+    <div class="rodin-scope-pills" role="group" aria-label="Target Architecture Domain">
+      <button type="button" class="rodin-scope-pill is-active" aria-pressed="true" data-scope-key="cloud-platform">Cloud-Native &amp; SaaS</button>
+      <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="ai-systems">AI Agents &amp; LLM</button>
+      <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="fintech-core">Distributed / FinTech Core</button>
+      <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="mobile-iot">Mobile &amp; Edge Telemetry</button>
+      <button type="button" class="rodin-scope-pill" aria-pressed="false" data-scope-key="dedicated-squad">Dedicated Senior Squad</button>
+    </div>
+    <div class="rodin-estimate-box" aria-live="polite">
+      <div>
+        <span class="rodin-estimate-item_label">Squad Topology</span>
+        <span class="rodin-estimate-item_val" data-est-squad>1 Principal Architect · 3 Senior Full-Stack · 1 DevSecOps</span>
+      </div>
+      <div>
+        <span class="rodin-estimate-item_label">Core Stack</span>
+        <span class="rodin-estimate-item_val" data-est-stack>TypeScript / Next.js · Go / Rust APIs · PostgreSQL · Kubernetes</span>
+      </div>
+      <div>
+        <span class="rodin-estimate-item_label">Delivery SLA</span>
+        <span class="rodin-estimate-item_val" data-est-sprint>MVP in 6–8 Weeks · Production V1 in 10–14 Weeks</span>
+      </div>
+    </div>
+    <form novalidate>
+      <input type="hidden" name="selected_scope" value="Cloud-Native & SaaS" />
+      <div class="rodin-form-grid">
+        <div class="rodin-field">
+          <label class="rodin-label" for="mod-name">Full Name *</label>
+          <span id="mod-name-hint" class="rodin-hint">Your name &amp; role</span>
+          <input class="rodin-input" type="text" id="mod-name" name="client_name" required minlength="2" autocomplete="name" aria-describedby="mod-name-hint" aria-errormessage="mod-name-err" placeholder="Jordan Vance, CTO" />
+          <div id="mod-name-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please enter your name.</div>
+        </div>
+        <div class="rodin-field">
+          <label class="rodin-label" for="mod-email">Work Email *</label>
+          <span id="mod-email-hint" class="rodin-hint">Format: name@company.com</span>
+          <input class="rodin-input" type="email" id="mod-email" name="client_email" required autocomplete="email" aria-describedby="mod-email-hint" aria-errormessage="mod-email-err" placeholder="jordan@company.com" />
+          <div id="mod-email-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please enter a valid work email address.</div>
+        </div>
+        <div class="rodin-field">
+          <label class="rodin-label" for="mod-company">Organization *</label>
+          <span id="mod-company-hint" class="rodin-hint">Company or venture name</span>
+          <input class="rodin-input" type="text" id="mod-company" name="client_company" required minlength="2" autocomplete="organization" aria-describedby="mod-company-hint" aria-errormessage="mod-company-err" placeholder="Vance Technologies" />
+          <div id="mod-company-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please enter your organization name.</div>
+        </div>
+        <div class="rodin-field">
+          <label class="rodin-label" for="mod-budget">Estimated Scope Budget</label>
+          <span id="mod-budget-hint" class="rodin-hint">Fixed-milestone or dedicated pod</span>
+          <select class="rodin-select" id="mod-budget" name="project_budget" aria-describedby="mod-budget-hint">
+            <option value="$50k – $100k">$50k – $100k (Architecture &amp; MVP)</option>
+            <option value="$100k – $250k" selected>$100k – $250k (Full Custom Platform)</option>
+            <option value="$250k – $500k+">$250k – $500k+ (Enterprise Core System)</option>
+            <option value="Dedicated Squad Retainer">Dedicated Senior Squad Retainer</option>
+          </select>
+        </div>
+        <div class="rodin-field full-span">
+          <label class="rodin-label" for="mod-brief">System Requirements &amp; Goals *</label>
+          <span id="mod-brief-hint" class="rodin-hint">What are we building or modernizing together?</span>
+          <textarea class="rodin-textarea" id="mod-brief" name="project_brief" rows="3" required minlength="10" aria-describedby="mod-brief-hint" aria-errormessage="mod-brief-err" placeholder="Tell us about your architecture, performance targets, and timeline..."></textarea>
+          <div id="mod-brief-err" class="rodin-error-msg"><span aria-hidden="true">▲</span> Please share at least 10 characters about your project.</div>
+        </div>
+      </div>
+      <div class="rodin-submit-row">
+        <span class="rodin-hint" style="margin:0;">Rodin Group LLC · 36 Shadow Brook Ln, Lander, WY 82520 · (775) 782-6587</span>
+        <button type="submit" class="cta-button is--blue"><span>Transmit Brief to Principal Architect →</span></button>
+      </div>
+      <div class="rodin-status-banner" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</dialog>
+
+<!-- 2. Case Study Architecture Deep-Dive Modal (<dialog closedby="any">) -->
+<dialog id="case-modal" class="rodin-dialog" closedby="any" aria-labelledby="caseModalTitle">
+  <div class="rodin-dialog_header">
+    <div>
+      <span class="rodin-dialog_badge" data-case-category>FinTech Core &amp; Distributed Ledger</span>
+      <h2 id="caseModalTitle" data-case-title style="font-size:1.5em;font-weight:500;margin-top:0.2em;">AetherPay Core</h2>
+    </div>
+    <button type="button" commandfor="case-modal" command="close" class="rodin-dialog_close">ESC / Close ✕</button>
+  </div>
+  <div class="rodin-dialog_body">
+    <div class="rodin-estimate-box" style="grid-template-columns:1fr 1fr;margin-top:0;margin-bottom:1.5em;">
+      <div>
+        <span class="rodin-estimate-item_label">Verified Production Telemetry</span>
+        <span class="rodin-estimate-item_val" data-case-metrics style="color:#1E6EF3;font-size:1em;">120,000 TPS · 14ms P99 Finality</span>
+      </div>
+      <div>
+        <span class="rodin-estimate-item_label">Production Technology Stack</span>
+        <span class="rodin-estimate-item_val" data-case-stack style="font-size:0.95em;">Rust · Go · Apache Kafka · PostgreSQL · Kubernetes</span>
+      </div>
+    </div>
+    <p data-case-summary style="color:#EFEFEB;font-size:1.05em;line-height:1.6;margin-bottom:1.5em;"></p>
+    <span class="rodin-label">Key Architectural Decisions &amp; Engineering Highlights</span>
+    <ul data-case-arch style="margin-top:0.75em;margin-bottom:2em;"></ul>
+    <div class="rodin-submit-row" style="border-top:1px solid #2A2F34;padding-top:1.25em;">
+      <span class="rodin-hint" style="margin:0;">Engineered end-to-end by Rodin Group LLC with 100% client IP ownership.</span>
+      <button type="button" data-case-request class="cta-button is--blue"><span>Architect a Similar System →</span></button>
+    </div>
+  </div>
+</dialog>
+
+<!-- 3. Official Wyoming Certificate of Organization Modal (<dialog closedby="any">) -->
+<dialog id="certificate-modal" class="rodin-dialog" closedby="any" aria-labelledby="certModalTitle">
+  <div class="rodin-dialog_header">
+    <div>
+      <span class="rodin-dialog_badge">Official Corporate Registry · State of Wyoming</span>
+      <h2 id="certModalTitle" style="font-size:1.35em;font-weight:500;margin-top:0.2em;">Certificate &amp; Articles of Organization — Rodin Group LLC</h2>
+    </div>
+    <button type="button" commandfor="certificate-modal" command="close" class="rodin-dialog_close">ESC / Close ✕</button>
+  </div>
+  <div class="rodin-dialog_body">
+    <div class="rodin-cert-paper">
+      <div class="rodin-cert-header">
+        <div style="font-family:'TWK Everett Mono',monospace;font-size:0.75em;letter-spacing:0.12em;text-transform:uppercase;color:#2A2F34;">STATE OF WYOMING · OFFICE OF THE SECRETARY OF STATE</div>
+        <h3 style="font-size:1.65em;font-weight:600;margin-top:0.35em;color:#000;">CERTIFICATE OF ORGANIZATION</h3>
+        <div style="font-size:1.25em;font-weight:500;color:#1E6EF3;margin-top:0.25em;">Rodin Group LLC</div>
+      </div>
+      <p style="font-size:0.95em;line-height:1.6;text-align:center;max-width:42em;margin:0 auto 1.5em;color:#161616;">
+        “I, CHUCK GRAY, Secretary of State of the State of Wyoming, do hereby certify that the filing requirements for the issuance of this certificate have been fulfilled. I have affixed hereto the Great Seal of the State of Wyoming and duly executed this official certificate at Cheyenne, Wyoming on this <strong>19th day of September, 2025 at 10:20 AM</strong>.”
+      </p>
+      <div class="rodin-cert-grid">
+        <div class="rodin-cert-box">
+          <div style="font-family:'TWK Everett Mono',monospace;font-size:0.72em;color:#5f6368;text-transform:uppercase;">I. Limited Liability Company Name</div>
+          <div style="font-weight:600;margin-top:0.25em;">Rodin Group LLC</div>
+          <div style="font-family:'TWK Everett Mono',monospace;font-size:0.75em;color:#1E6EF3;margin-top:0.3em;">Original ID: 2025-001772051</div>
+        </div>
+        <div class="rodin-cert-box">
+          <div style="font-family:'TWK Everett Mono',monospace;font-size:0.72em;color:#5f6368;text-transform:uppercase;">II. Registered Agent</div>
+          <div style="font-weight:600;margin-top:0.25em;">Wyoming Discount Registered Agent, Inc.</div>
+          <div style="font-size:0.88em;color:#2A2F34;margin-top:0.2em;">36 Shadow Brook Ln, Lander, WY 82520</div>
+        </div>
+        <div class="rodin-cert-box">
+          <div style="font-family:'TWK Everett Mono',monospace;font-size:0.72em;color:#5f6368;text-transform:uppercase;">III &amp; IV. Principal Office &amp; Mailing Address</div>
+          <div style="font-weight:600;margin-top:0.25em;">36 Shadow Brook Ln</div>
+          <div style="font-size:0.88em;color:#2A2F34;margin-top:0.2em;">Lander, WY 82520, USA</div>
+        </div>
+        <div class="rodin-cert-box">
+          <div style="font-family:'TWK Everett Mono',monospace;font-size:0.72em;color:#5f6368;text-transform:uppercase;">V. Organizer &amp; Authorized Signatory</div>
+          <div style="font-weight:600;margin-top:0.25em;">Balázs Lederer</div>
+          <div style="font-size:0.88em;color:#2A2F34;margin-top:0.2em;">Filed: 09/19/2025 · Ph: (775) 782-6587</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #2A2F34;padding-top:1em;font-family:'TWK Everett Mono',monospace;font-size:0.75em;color:#2A2F34;flex-wrap:wrap;gap:0.5em;">
+        <span>WY Secretary of State · Herschler Bldg East, Cheyenne, WY 82002-0020</span>
+        <span>Compliant with W.S. 17-29-101 through 17-29-1105</span>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript"></script>
+<script src="assets/js/webflow.schunk.c42549641b7d4501.js" type="text/javascript"></script>
+<script src="assets/js/webflow.schunk.d3ccbb73ca719876.js" type="text/javascript"></script>
+<script src="assets/js/webflow.schunk.1480913c3571b049.js" type="text/javascript"></script>
+<script src="assets/js/webflow.6d3149b8.55acc07a84b6834a.js" type="text/javascript"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/CustomEase.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/MorphSVGPlugin.min.js"></script>
+<script src="assets/js/DrawSVGPlugin.min.js"></script>
+<script src="assets/js/Draggable.min.js"></script>
+<script src="assets/js/InertiaPlugin.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script>gsap.registerPlugin(ScrollTrigger,CustomEase,SplitText,MorphSVGPlugin,DrawSVGPlugin,Draggable,InertiaPlugin);</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById('hamb-button');
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      document.body.classList.toggle('menu-open');
+    });
+  }
+});
+</script>
+<script type="module" src="assets/js/slater_core.js"></script>
+<script src="assets/js/slater_th.js"></script>
+<script>
+let index = 0;
+let draggableInstance;
+const slideritem = document.querySelectorAll('[data-slider-item]');
+const sliderWrapper = document.querySelector('[data-slider-wrapper]');
+const filters = document.querySelectorAll('[data-filter]');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
+
+function getVisibleCards() {
+  return [...slideritem].filter(c => !c.classList.contains('hidden'));
+}
+
+function getMetrics() {
+  const visible = getVisibleCards();
+  if (!visible.length || !sliderWrapper) return { visible: [], cardWidth: 320, maxIndex: 0, maxX: 0 };
+  const gap = parseInt(getComputedStyle(sliderWrapper).gap) || 0;
+  const cardWidth = visible[0].offsetWidth + gap;
+  return {
+    visible,
+    cardWidth,
+    maxIndex: Math.max(0, visible.length - 1),
+    maxX: -Math.max(0, visible.length - 1) * cardWidth
+  };
+}
+
+function snapToIndex(i) {
+  if (!sliderWrapper) return;
+  const { cardWidth, maxIndex } = getMetrics();
+  index = Math.max(0, Math.min(i, maxIndex));
+  gsap.to(sliderWrapper, { x: -(index * cardWidth), duration: 0.4, ease: "power2.out" });
+  updateNav();
+}
+
+function updateNav() {
+  if (!nextBtn || !prevBtn) return;
+  const { maxIndex } = getMetrics();
+  nextBtn.classList.toggle('active', index < maxIndex);
+  prevBtn.classList.toggle('active', index > 0);
+}
+
+if (nextBtn) nextBtn.onclick = () => snapToIndex(index + 1);
+if (prevBtn) prevBtn.onclick = () => snapToIndex(index - 1);
+
+filters.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+    filters.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    slideritem.forEach(card => {
+      const categories = [...card.querySelectorAll('[data-category]')].map(el => el.dataset.category);
+      const match = filter === 'all' || categories.includes(filter);
+      card.classList.toggle('hidden', !match);
+    });
+    index = 0;
+    if (sliderWrapper) gsap.set(sliderWrapper, { x: 0 });
+    updateNav();
+  });
+});
+updateNav();
+</script>
+<script src="assets/js/rodin-custom.js"></script>
+</body></html>

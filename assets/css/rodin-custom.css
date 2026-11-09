@@ -1,0 +1,559 @@
+/* Rodin Group LLC — Custom Architectural Extensions & Modern Web Guidance Styles */
+
+/* 1. Top-Layer Dialog & Popover Discrete Entry/Exit Transitions (motion + light-dismiss-a-dialog) */
+dialog.rodin-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(92vw, 56em);
+  max-height: 88dvh;
+  background-color: #0b0d10;
+  color: #ffffff;
+  border: 1px solid #2a2f34;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9999;
+  box-shadow: 0 32px 96px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(30, 110, 243, 0.2);
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  transition:
+    opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    display 0.28s allow-discrete,
+    overlay 0.28s allow-discrete;
+  transition-behavior: allow-discrete;
+  @media (prefers-reduced-motion: reduce) {
+    transition-duration: 0.05s;
+    transform: none;
+  }
+}
+
+dialog.rodin-dialog[open] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@starting-style {
+  dialog.rodin-dialog[open] {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+dialog.rodin-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition:
+    opacity 0.28s ease-out,
+    display 0.28s allow-discrete,
+    overlay 0.28s allow-discrete;
+  transition-behavior: allow-discrete;
+}
+
+dialog.rodin-dialog[open]::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  dialog.rodin-dialog[open]::backdrop {
+    opacity: 0;
+  }
+}
+
+/* Dialog internal layout */
+.rodin-dialog_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  border-bottom: 1px solid #2a2f34;
+  background: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.rodin-dialog_badge {
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1e6ef3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.rodin-dialog_badge::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #1e6ef3;
+  display: inline-block;
+}
+
+.rodin-dialog_close {
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffffb3;
+  border: 1px solid #2a2f34;
+  padding: 0.5em 0.9em;
+  background: #14171c;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.rodin-dialog_close:hover {
+  background-color: #1e6ef3;
+  border-color: #1e6ef3;
+  color: #ffffff;
+}
+
+.rodin-dialog_body {
+  padding: 2em;
+}
+
+/* 2. Interactive Project Configurator & Inquiry Section (#contact-section) */
+.rodin-architect-section {
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+  padding: 6.5em 0;
+  border-top: 1px solid #2a2f34;
+}
+
+.rodin-architect_grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 3em;
+  align-items: start;
+}
+
+@media screen and (max-width: 991px) {
+  .rodin-architect_grid {
+    grid-template-columns: 1fr;
+    gap: 2.5em;
+  }
+}
+
+.rodin-architect_card {
+  background-color: #0b0d10;
+  border: 1px solid #2a2f34;
+  padding: 2.25em;
+  position: relative;
+}
+
+.rodin-corner-cube {
+  position: absolute;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #1e6ef3;
+}
+.rodin-corner-cube.tl { top: -0.25em; left: -0.25em; }
+.rodin-corner-cube.tr { top: -0.25em; right: -0.25em; }
+.rodin-corner-cube.bl { bottom: -0.25em; left: -0.25em; }
+.rodin-corner-cube.br { bottom: -0.25em; right: -0.25em; }
+
+.rodin-scope-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.rodin-scope-pill {
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.8125em;
+  padding: 0.6em 1em;
+  border: 1px solid #2a2f34;
+  background-color: #12151a;
+  color: #ffffffb3;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.rodin-scope-pill:hover {
+  border-color: #1e6ef3;
+  color: #ffffff;
+}
+
+.rodin-scope-pill[aria-pressed="true"],
+.rodin-scope-pill.is-active {
+  background-color: #1e6ef3;
+  border-color: #1e6ef3;
+  color: #ffffff;
+}
+
+/* Live Estimate Readout Box */
+.rodin-estimate-box {
+  margin-top: 1.5em;
+  padding: 1.25em 1.5em;
+  background-color: #111622;
+  border: 1px solid rgba(30, 110, 243, 0.45);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .rodin-estimate-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rodin-estimate-item_label {
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.72em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffff80;
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.rodin-estimate-item_val {
+  font-family: "TWKEverett", sans-serif;
+  font-size: 1.15em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* 3. Form Controls & Deferred Validation (:user-invalid per validate-input-after-interaction) */
+.rodin-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25em;
+  margin-top: 1.5em;
+}
+
+@media screen and (max-width: 640px) {
+  .rodin-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rodin-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodin-field.full-span {
+  grid-column: 1 / -1;
+}
+
+.rodin-label {
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #efefeb;
+  margin-bottom: 0.25em;
+}
+
+.rodin-hint {
+  display: block;
+  color: #8e99a4;
+  font-size: 0.78em;
+  margin-bottom: 0.4em;
+}
+
+.rodin-input,
+.rodin-textarea,
+.rodin-select {
+  width: 100%;
+  background-color: #12151a;
+  border: 1px solid #2a2f34;
+  color: #ffffff;
+  padding: 0.8em 1em;
+  font-size: 0.9375em;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.rodin-input:focus,
+.rodin-textarea:focus,
+.rodin-select:focus {
+  border-color: #1e6ef3;
+  background-color: #161b24;
+}
+
+.rodin-error-msg {
+  display: none;
+  color: #ff6b6b;
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.78em;
+  margin-top: 0.35em;
+}
+
+/* Deferred validation: only after user interaction (:user-invalid + fallback) */
+.rodin-input:user-invalid,
+.rodin-textarea:user-invalid,
+.rodin-input.user-invalid-fallback,
+.rodin-textarea.user-invalid-fallback {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.09);
+}
+
+.rodin-input:user-invalid + .rodin-error-msg,
+.rodin-textarea:user-invalid + .rodin-error-msg,
+.rodin-input.user-invalid-fallback + .rodin-error-msg,
+.rodin-textarea.user-invalid-fallback + .rodin-error-msg {
+  display: block;
+}
+
+.rodin-input:user-valid,
+.rodin-textarea:user-valid,
+.rodin-input.user-valid-fallback,
+.rodin-textarea.user-valid-fallback {
+  border-color: #10b981;
+}
+
+.rodin-submit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 1.5em;
+  flex-wrap: wrap;
+}
+
+.rodin-status-banner {
+  display: none;
+  margin-top: 1.25em;
+  padding: 1em 1.25em;
+  background-color: rgba(16, 185, 129, 0.12);
+  border: 1px solid #10b981;
+  color: #ecfdf5;
+  font-size: 0.9em;
+}
+
+.rodin-status-banner.is-visible {
+  display: block;
+}
+
+/* 4. Official Wyoming Corporate Registry & Certificate Card */
+.rodin-registry-card {
+  background-color: #12151a;
+  border: 1px solid #2a2f34;
+  padding: 1.5em;
+  margin-top: 1.5em;
+}
+
+.rodin-registry-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.875em;
+  gap: 1em;
+}
+
+.rodin-registry-row:last-child {
+  border-bottom: none;
+}
+
+.rodin-registry-key {
+  font-family: "TWK Everett Mono", monospace;
+  color: #ffffff80;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+.rodin-registry-val {
+  color: #ffffff;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Certificate Document Preview inside #certificate-modal */
+.rodin-cert-paper {
+  background-color: #efefeb;
+  color: #0b0d10;
+  padding: 2.5em;
+  border: 2px solid #0b0d10;
+  box-shadow: inset 0 0 0 1px #8e99a4;
+}
+
+.rodin-cert-header {
+  text-align: center;
+  border-bottom: 1px solid #2a2f34;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.rodin-cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25em;
+  margin: 1.5em 0;
+}
+
+@media screen and (max-width: 640px) {
+  .rodin-cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rodin-cert-box {
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  padding: 1em 1.25em;
+}
+
+/* 5. Marquee Carousel Visibility & Reduced Motion Controls */
+.logo-carousel_component.rodin-active-carousel {
+  display: block !important;
+  position: relative;
+}
+
+.rodin-carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2.5em 0.75em;
+}
+
+.rodin-carousel-pause {
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffff80;
+  border: 1px solid #2a2f34;
+  padding: 0.35em 0.75em;
+  background: #0b0d10;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.rodin-carousel-pause:hover {
+  color: #ffffff;
+  border-color: #1e6ef3;
+}
+
+/* 6. Footer & Navbar Layout Integrity (preventing multi-line overlap & absolute logo collision) */
+#nav-container.container-880 {
+  max-width: 64em;
+}
+
+[global="textStagger"] [global-target],
+[global="textStagger"]:not(:has([global-target])) {
+  white-space: nowrap;
+}
+
+.footer {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
+  padding-top: 4em !important;
+  padding-bottom: 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr !important;
+  column-gap: 3.5em !important;
+  row-gap: 3em !important;
+  margin-bottom: 2.5em !important;
+  align-items: start;
+}
+
+.footer_links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  column-gap: 2.5em !important;
+  row-gap: 2.5em !important;
+  align-items: start;
+}
+
+.footer_links-heading {
+  line-height: 1.3 !important;
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em !important;
+  row-gap: 0.85em !important;
+}
+
+.footer_list-item {
+  line-height: 1.38 !important;
+  position: relative;
+}
+
+.footer_list-item a {
+  display: inline-block;
+  line-height: 1.38 !important;
+}
+
+.footer_list-item span {
+  display: inline;
+  line-height: 1.38 !important;
+  text-shadow: none !important;
+  overflow: visible !important;
+}
+
+.rodin-footer-legal {
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  margin-top: 2em;
+  padding: 1.5em 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25em;
+  font-family: "TWK Everett Mono", monospace;
+  font-size: 0.78em;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.footer .rodin-carousel-pause {
+  background: rgba(11, 13, 16, 0.28);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.footer .rodin-carousel-pause:hover {
+  background: #ffffff;
+  color: #1e6ef3;
+  border-color: #ffffff;
+}
+
+.footer-logo {
+  position: relative !important;
+  inset: auto !important;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 3em;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    row-gap: 2.5em !important;
+  }
+
+  .footer_links-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 2em !important;
+    row-gap: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer_links-grid {
+    grid-template-columns: 1fr !important;
+    row-gap: 2em !important;
+  }
+}
